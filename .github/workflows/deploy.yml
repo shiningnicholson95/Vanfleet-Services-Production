@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'vanfleet-wp-theme/**'
 
 jobs:
   deploy:
@@ -17,20 +19,27 @@ jobs:
       - name: Install lftp
         run: sudo apt-get install -y lftp
 
+      - name: Verify local theme folder is not empty
+        run: |
+          if [ -z "$(ls -A ./vanfleet-wp-theme 2>/dev/null)" ]; then
+            echo "::error::vanfleet-wp-theme/ is empty or missing locally - refusing to mirror with --delete, since that would wipe the live theme."
+            exit 1
+          fi
+
       - name: Deploy via SFTP with lftp
         env:
           SFTP_HOST: ${{ secrets.FTP_SERVER }}
           SFTP_USER: ${{ secrets.FTP_USERNAME }}
           SFTP_PASS: ${{ secrets.FTP_PASSWORD }}
           SFTP_PORT: ${{ secrets.FTP_PORT }}
+          REMOTE_PATH: ${{ vars.THEME_REMOTE_PATH }}
         run: |
-          lftp -c "
+          lftp -u "$SFTP_USER,$SFTP_PASS" -p "$SFTP_PORT" "sftp://$SFTP_HOST" -e "
             set sftp:auto-confirm yes;
             set net:max-retries 3;
-            open sftp://$SFTP_USER:$SFTP_PASS@$SFTP_HOST:$SFTP_PORT;
             mirror --reverse --delete --verbose \
               --exclude=^\.git \
               --exclude=^node_modules \
-              ./vanfleet-wp-theme/ /www/vanfleetservice_900/public/wp-content/themes/vanfleet-wp-theme/;
+              ./vanfleet-wp-theme/ \"/$REMOTE_PATH/\";
             bye
-          " 
+          "

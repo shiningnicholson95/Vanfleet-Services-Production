@@ -1,0 +1,58 @@
+name: Pull live theme from production (manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      remote_path:
+        description: 'Remote path to the theme folder (relative to the SFTP login root). Leave blank to use the THEME_REMOTE_PATH repo variable.'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  pull:
+    name: SFTP Pull
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install lftp
+        run: sudo apt-get install -y lftp
+
+      - name: Pull theme via SFTP with lftp
+        env:
+          SFTP_HOST: ${{ secrets.FTP_SERVER }}
+          SFTP_USER: ${{ secrets.FTP_USERNAME }}
+          SFTP_PASS: ${{ secrets.FTP_PASSWORD }}
+          SFTP_PORT: ${{ secrets.FTP_PORT }}
+          REMOTE_PATH: ${{ inputs.remote_path != '' && inputs.remote_path || vars.THEME_REMOTE_PATH }}
+        run: |
+          rm -rf ./vanfleet-wp-theme-live
+          mkdir -p ./vanfleet-wp-theme-live
+          lftp -u "$SFTP_USER,$SFTP_PASS" -p "$SFTP_PORT" "sftp://$SFTP_HOST" -e "
+            set sftp:auto-confirm yes;
+            set net:max-retries 3;
+            mirror --verbose \"/$REMOTE_PATH/\" ./vanfleet-wp-theme-live/;
+            bye
+          "
+
+      - name: Commit pulled theme to a review branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          BRANCH="pull-live-theme-${{ github.run_id }}"
+          git checkout -b "$BRANCH"
+          rm -rf ./vanfleet-wp-theme
+          mv ./vanfleet-wp-theme-live ./vanfleet-wp-theme
+          git add vanfleet-wp-theme
+          if git diff --cached --quiet; then
+            echo "No changes pulled from production."
+          else
+            git commit -m "Pull live vanfleet-wp-theme from production for review"
+            git push origin "$BRANCH"
+            echo "Pushed review branch: $BRANCH"
+          fi
