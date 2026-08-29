@@ -299,4 +299,11 @@
 .vf-page-content p{margin:0 0 var(--space-4);line-height:1.65}
 .vf-page-content h2{margin:var(--space-8) 0 var(--space-3);font-size:var(--fs-h2)}
 .vf-page-content h3{margin:var(--space-6) 0 var(--space-2);font-size:var(--fs-h3)}
+
+/* ── Inline CTA banner (long-form template, mid-article) ─── */
+.vf-inline-cta{display:flex;align-items:center;justify-content:space-between;gap:var(--space-6);flex-wrap:wrap;background:var(--navy-600);color:#fff;border-radius:var(--radius-xl);padding:var(--space-6) var(--space-8);margin:var(--space-10) 0}
+.vf-inline-cta__body{flex:1;min-width:220px}
+.vf-inline-cta h3{color:#fff;margin:0 0 4px;font-size:20px}
+.vf-inline-cta p{color:rgba(255,255,255,.82);margin:0;font-size:15px;line-height:1.5}
+.vf-inline-cta .vf-btn--primary{flex-shrink:0}
 .vf-page-content ul,.vf-page-content ol{padding-left:1.4em;margin:0 0 var(--space-4)}
