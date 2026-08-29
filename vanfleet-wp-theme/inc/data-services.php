@@ -531,7 +531,7 @@ return [
   /* ── WHOLE HOME GENERATOR SERVICES — DOWNINGTOWN, PA ──────── */
   [
     'title'           => 'Whole Home Generator Installation',
-    'slug'            => 'whole-home-generator-services-downingtown-pa',
+    'slug'            => 'whole-home-generator-installation-downingtown-pa',
     'image'           => '2026/06/home-vanfleet-services-llc.jpeg',
     'image_alt'       => 'Whole home generator installation — Van Fleet Services',
     'type'            => 'service',
