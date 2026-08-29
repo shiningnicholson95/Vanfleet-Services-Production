@@ -537,7 +537,7 @@ return [
     'type'            => 'service',
     'parent'          => null,
     'primary_keyword' => 'whole home generator installation Downingtown PA',
-    'description'     => 'Downingtown homeowners lose power to snowstorms, thunderstorms, and grid outages more often than most. Van Fleet Services installs standby whole-home generators that connect directly to your electrical panel and automatically restore power to your entire house — or the circuits you choose — within moments of an outage, no manual startup required.',
+    'description'     => 'Living in Downingtown means enjoying the unique charm and community of Chester County. However, it also means being prepared for potential power outages that can disrupt daily life without warning. From severe weather like snowstorms, thunderstorms, or high winds to unexpected grid issues, losing power can mean more than just inconvenience; it can impact comfort, safety, and the functionality of essential home systems. Installing a whole home generator offers a reliable solution, providing continuous power to keep your life running smoothly, no matter what happens outside.',
     'cta'             => 'Schedule Whole-Home Generator Installation',
     'features'        => [
       'Automatic power restoration within seconds of an outage',
