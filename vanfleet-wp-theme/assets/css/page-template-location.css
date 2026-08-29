@@ -1,0 +1,15 @@
+/* ── Location Page Template — page-template-location.php ─────
+   Loaded conditionally: only on pages using this template.
+   Global template styles live in pages.css (PRD 1.5 block).
+   Add location-template-specific overrides here.
+   ─────────────────────────────────────────────────────────── */
+
+/* ── Emergency CTA: button row alignment ────────────────────
+   Explicit flex on actions wrapper so buttons are always
+   side-by-side on desktop; single-column stack on mobile. */
+.vf-emergency__actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+
+@media(max-width:700px){
+  .vf-emergency__actions{flex-direction:column;align-items:stretch}
+  .vf-emergency__actions .vf-btn{width:100%;justify-content:center}
+}

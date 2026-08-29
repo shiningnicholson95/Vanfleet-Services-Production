@@ -1,0 +1,92 @@
+/* Release 2.4 — Button shape + hero badge global overrides
+   Loaded last in CSS stack via wp_enqueue_style to beat all other rules.
+   !important beats inline style="border-radius:var(--radius-pill)" in templates. */
+
+/* ── Fix 1: Rectangular buttons — var(--radius-md) = 12px everywhere ── */
+.vf-btn,
+.vf-btn--primary,
+.vf-btn--secondary,
+.vf-btn--outline-white,
+.vf-btn--white,
+.vf-btn--emergency,
+.vf-btn--emergency-white { border-radius: var(--radius-md) !important; }
+
+/* Header call button — components.css has this as var(--radius-pill) */
+.vf-call-btn { border-radius: var(--radius-md) !important; }
+
+/* Service / location page hero buttons */
+.vf-hero-call-btn,
+.vf-hero-schedule-btn { border-radius: var(--radius-md) !important; }
+
+/* ── Fix 2: Hero badge spacing in vf-page-hero context ── */
+/* .vf-hero__badge CSS is in components.css and applies here automatically.
+   Only override needed: margin spacing for the page-hero grid layout. */
+.vf-page-hero .vf-hero__badge { margin-bottom: 16px; }
+
+/* ── Release 2.5: Dropdown hover gap fix ── */
+
+/* Transparent pseudo-element bridges the 8px gap between the nav item and sub-menu.
+   The cursor staying inside the ::after area keeps :hover active on the li,
+   preventing the sub-menu from collapsing while the cursor traverses the gap. */
+.vf-nav .vf-has-dropdown::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: transparent;
+}
+
+/* Instant open, 120ms delayed close — gives cursor time to enter the sub-menu */
+.vf-nav .vf-has-dropdown:not(:hover):not(.is-open) .sub-menu {
+  transition-delay: 120ms !important;
+}
+
+/* Release 3.5 — Hide theme sticky bar on mobile; WPCode offcanvas bar takes over */
+@media (max-width: 767px) {
+  .vf-mobile-cta { display: none !important; }
+  body { padding-bottom: 62px !important; } /* matches #vf-sticky-bar height */
+
+  /* Release 3.6 — Show WPCode bars on initial load without waiting for JS.
+     WP Rocket delays script execution until first user interaction, which keeps
+     the bars display:none until scroll. CSS beats the delay. */
+  #vf-mobile-logo-bar {
+    display: flex !important;
+    visibility: visible !important;
+  }
+  #vf-sticky-bar {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  /* Release 3.7 — Tighter footer nav link spacing on mobile */
+  .vf-footer__nav-list { gap: 2px !important; }
+  .vf-footer-grid { gap: 18px !important; }
+
+  /* Release 3.8 — Further tighten footer section spacing on mobile. */
+  .vf-footer__col-heading { margin-bottom: 8px; }
+  .vf-footer-grid { gap: 14px !important; }
+
+  /* Release 3.9 — mobile.css loads after this file and was still setting
+     min-height:44px + display:flex on every footer link row, which is what
+     actually produced the big visible gaps (the 3.7 rule above never won —
+     wrong load order). Real fix lives in mobile.css: row height dropped
+     44px → 32px, which is what shrinks the footer on mobile now. */
+}
+
+/* Release 3.4 — vf-photo-placeholder real image sizing */
+.vf-photo-placeholder {
+  overflow: hidden;
+  border-radius: var(--radius-lg, 12px);
+  background: var(--color-surface-offset, #e6e4df);
+}
+
+.vf-photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: inherit;
+}

@@ -1,0 +1,22 @@
+/* ── Offer Pages — templates/template-offer-detail.php, template-offer-hub.php ── */
+
+/* Offer detail page-hero banner — price shown 2px larger than the standard eyebrow */
+.vf-offer-hero .vf-page-hero__eyebrow{font-size:calc(var(--fs-eyebrow) + 2px)}
+
+.vf-offer-detail{background:var(--surface-section);padding-block:var(--space-16)}
+.vf-offer-detail__inner{max-width:var(--container-narrow)}
+.vf-offer-detail__inner .vf-lead{font-weight:var(--fw-bold);color:var(--text-muted)}
+.vf-offer-detail__inner>p:not(.vf-eyebrow):not(.vf-lead){font-size:var(--fs-body);color:var(--text-body);margin:0 0 var(--space-4)}
+.vf-offer-detail__list{list-style:disc;padding-left:var(--space-6);margin:0 0 var(--space-6)}
+.vf-offer-detail__list li{font-size:var(--fs-body);color:var(--text-body);line-height:var(--lh-relaxed);margin-bottom:var(--space-2)}
+.vf-offer-detail__disclaimer{font-size:var(--fs-xs);color:var(--text-muted);line-height:var(--lh-relaxed);margin:var(--space-2) 0 var(--space-8)}
+
+/* All Offers hub tiles */
+.vf-offer-tile{display:flex;flex-direction:column;gap:6px;background:var(--surface-card);border:1px solid var(--border-default);border-radius:var(--radius-lg);padding:var(--space-6);text-decoration:none;box-shadow:var(--shadow-xs);transition:box-shadow var(--dur) var(--ease-out),transform var(--dur) var(--ease-out)}
+.vf-offer-tile:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.vf-offer-tile__price{font-family:var(--font-heading);font-weight:var(--fw-extrabold);font-size:var(--fs-h3);color:var(--navy-700)}
+.vf-offer-tile__title{font-size:var(--fs-sm);color:var(--text-body);font-weight:var(--fw-semibold)}
+
+@media(max-width:768px){
+  .vf-offer-detail__inner{max-width:none}
+}

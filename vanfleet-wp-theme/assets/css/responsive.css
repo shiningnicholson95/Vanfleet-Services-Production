@@ -1,0 +1,88 @@
+/* Header nav now carries more items (dropdowns + Blogs) than it used to,
+   so the icon-only call button + tighter gap need to kick in well before
+   the 980px point where the desktop nav disappears entirely — otherwise
+   nav links run out of room and wrap mid-label instead of staying on one line. */
+@media(max-width:1320px){
+  .vf-call-btn__text{display:none}
+  .vf-call-btn{padding:9px 13px}
+  .vf-call-btn__icon{width:36px;height:36px}
+  .vf-nav .vf-nav__list{gap:14px}
+}
+
+@media(max-width:1080px){
+  .vf-footer-grid{grid-template-columns:1fr 1fr;gap:28px}
+}
+
+@media(max-width:980px){
+  .vf-grid--3,.vf-grid--4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .vf-hero__grid{grid-template-columns:1fr}
+  .vf-nav{display:none}
+  .vf-call-btn{display:none}
+  .vf-menu-toggle{display:inline-flex}
+  .vf-split,.vf-split--areas{grid-template-columns:1fr}
+  .vf-trustbar__grid{grid-template-columns:repeat(2,1fr)}
+  .vf-process-steps{grid-template-columns:repeat(2,1fr)}
+  .vf-reviews-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .vf-photo-placeholder{height:240px}
+  .vf-areas-grid{grid-template-columns:repeat(2,1fr)}
+  /* Interior page */
+  .vf-page-hero__grid{grid-template-columns:1fr}
+  .vf-content-split{grid-template-columns:1fr}
+  .vf-sidebar{position:static}
+  .vf-process-steps--3{grid-template-columns:repeat(2,1fr)}
+  .vf-footer-grid{grid-template-columns:1fr 1fr;gap:24px}
+  /* Blog featured card — stack instead of side-by-side */
+  .vf-blog-card--featured{flex-direction:column}
+  .vf-blog-card--featured .vf-blog-card__media{flex:none;aspect-ratio:16/9}
+  .vf-blog-card--featured .vf-blog-card__body{padding:24px}
+  /* Legal page — TOC sidebar above content instead of beside it */
+  .vf-legal-grid{grid-template-columns:1fr}
+  .vf-legal-toc{order:-1;margin-bottom:32px}
+  .vf-legal-toc ul{flex-direction:row;flex-wrap:wrap;gap:10px 18px}
+}
+
+@media(max-width:700px){
+  .vf-grid--2,.vf-grid--3,.vf-grid--4{grid-template-columns:minmax(0,1fr)}
+  /* Show mobile sticky bar, hide desktop header CTA text */
+  .vf-mobile-cta{display:flex}
+  body{padding-bottom:66px}
+  .vf-topbar__right{display:none}
+  .vf-hero{padding-block:var(--section-y)}
+  .vf-hero h1{font-size:var(--fs-h1)}
+  .vf-trustbar__grid{grid-template-columns:1fr}
+  .vf-process-steps{grid-template-columns:1fr}
+  .vf-reviews-grid{grid-template-columns:1fr}
+  .vf-feature-grid{grid-template-columns:1fr}
+  .vf-emergency-card{flex-direction:column;padding:24px}
+  .vf-hero__checkmarks{gap:12px}
+  .vf-cta-row--center{flex-direction:column;align-items:center}
+  .vf-areas-grid{grid-template-columns:1fr}
+  /* Interior page */
+  .vf-page-hero{padding-block:var(--space-6) var(--space-10)}
+  .vf-page-hero h1{font-size:var(--fs-h2)}
+  .vf-checklist{grid-template-columns:1fr}
+  .vf-process-steps--3{grid-template-columns:1fr}
+  .vf-footer-grid{grid-template-columns:1fr}
+  .vf-footer__brand{margin-bottom:8px}
+  /* Reviews page — stack the score, bars, and CTA buttons */
+  .vf-rating-summary{flex-direction:column;align-items:stretch;text-align:center}
+  .vf-rating-summary__actions{flex-direction:row;justify-content:center}
+}
+
+/* ── PRD 1.5: Location + Service template responsive ─────── */
+@media(max-width:980px){
+  .vf-local-split{grid-template-columns:1fr}
+  .vf-services-grid{grid-template-columns:repeat(2,1fr)}
+  .vf-hero-schedule-btn{font-size:16px;padding:14px 24px}
+}
+@media(max-width:700px){
+  .vf-services-grid{grid-template-columns:1fr}
+  .vf-emergency{flex-direction:column;padding:var(--space-8);text-align:center}
+  .vf-emergency__actions{justify-content:center}
+  .vf-emergency__phone-icon{display:none}
+  .vf-form-row{grid-template-columns:1fr}
+  .vf-urgency,.vf-time-grid{grid-template-columns:1fr}
+  .vf-hero-call-btn{padding:13px 20px}
+  .vf-hero-call-btn__number{font-size:18px}
+  .vf-hero-schedule-btn{font-size:15px;padding:12px 22px}
+}

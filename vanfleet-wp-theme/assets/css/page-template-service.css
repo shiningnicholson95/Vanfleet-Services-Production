@@ -1,0 +1,34 @@
+/* ── Service Page Template — page-template-service.php ───────
+   Loaded conditionally: only on pages using this template.
+   Global template styles live in pages.css (PRD 1.5 block).
+   Add service-template-specific overrides here.
+   ─────────────────────────────────────────────────────────── */
+
+/* ── Process step: card appearance ──────────────────────────
+   components.css sets the flex layout but omits the card
+   background/padding/radius from the approved service.html design. */
+.vf-process-step{background:var(--gray-50);border-radius:var(--radius-lg);padding:var(--space-6)}
+
+/* Number badge: 32×32 circle per service.html
+   (components.css default is 48×48 with radius-md). */
+.vf-process-step__num{width:32px;height:32px;border-radius:50%;font-size:14px}
+
+/* FAQ button: heading font per service.html design
+   (components.css uses var(--font-body)). */
+.vf-faq__button{font-family:var(--font-heading)}
+
+/* Emergency CTA banner — definitive source for service pages.
+   pages.css may not be uploaded to staging; these rules ensure
+   the navy gradient banner always renders correctly here. */
+.vf-emergency{background:linear-gradient(120deg,var(--navy-700),var(--blue-600));color:#fff;border-radius:var(--radius-xl);padding:var(--space-10) var(--space-12);display:flex;align-items:center;justify-content:space-between;gap:var(--space-8);flex-wrap:wrap}
+.vf-emergency__phone-icon{width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.vf-emergency__body h3{font-size:24px;color:#fff;margin:0 0 6px}
+.vf-emergency__body p{color:var(--navy-100);font-size:15px;margin:0}
+.vf-emergency__actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.vf-btn--white{background:#fff;color:var(--color-cta);box-shadow:var(--shadow-lg);border-color:transparent}
+.vf-btn--white:hover{background:#fff;color:var(--color-cta-hover);transform:translateY(-1px)}
+@media(max-width:700px){
+  .vf-emergency{flex-direction:column;padding:var(--space-8);text-align:center}
+  .vf-emergency__actions{flex-direction:column;align-items:stretch;width:100%}
+  .vf-emergency__actions .vf-btn{width:100%;justify-content:center}
+}
