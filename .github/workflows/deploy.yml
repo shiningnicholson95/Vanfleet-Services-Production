@@ -40,6 +40,6 @@ jobs:
             mirror --reverse --delete --verbose \
               --exclude=^\.git \
               --exclude=^node_modules \
-              ./vanfleet-wp-theme/ \"/$REMOTE_PATH/\";
+              ./vanfleet-wp-theme/ $REMOTE_PATH/;
             bye
           "
