@@ -528,6 +528,32 @@ return [
     ],
   ],
 
+  /* ── WHOLE HOME GENERATOR SERVICES — DOWNINGTOWN, PA ──────── */
+  [
+    'title'           => 'Whole Home Generator Installation',
+    'slug'            => 'whole-home-generator-services-downingtown-pa',
+    'image'           => '2026/06/home-vanfleet-services-llc.jpeg',
+    'image_alt'       => 'Whole home generator installation — Van Fleet Services',
+    'type'            => 'service',
+    'parent'          => null,
+    'primary_keyword' => 'whole home generator installation Downingtown PA',
+    'description'     => 'Downingtown homeowners lose power to snowstorms, thunderstorms, and grid outages more often than most. Van Fleet Services installs standby whole-home generators that connect directly to your electrical panel and automatically restore power to your entire house — or the circuits you choose — within moments of an outage, no manual startup required.',
+    'cta'             => 'Schedule Whole-Home Generator Installation',
+    'features'        => [
+      'Automatic power restoration within seconds of an outage',
+      'Keeps HVAC, refrigeration, medical equipment, and well pumps running',
+      'Natural gas or propane fuel options',
+      'Automatic transfer switch monitors utility power around the clock',
+      'Generator sized to your home\'s essential circuits and startup loads',
+      'Installation permitted and inspected to Downingtown, PA code',
+    ],
+    'faqs'            => [
+      ['question' => 'How does a whole-home generator restore power automatically?',   'answer' => 'An automatic transfer switch continuously monitors utility power. When it detects an outage, it starts the generator and switches your home over — typically within seconds, with no manual intervention.'],
+      ['question' => 'What size generator do I need for my Downingtown home?',          'answer' => 'Sizing depends on which circuits you want to keep running during an outage and their startup wattage, especially for motors and large appliances. We assess your panel and usage on-site and recommend the right size — no oversizing or underselling.'],
+      ['question' => 'What does the installation process involve?',                    'answer' => 'We handle site assessment, permitting to Downingtown\'s local requirements, the generator pad, electrical and fuel-line connections, system testing, and a full walkthrough — plus ongoing maintenance plans afterward.'],
+    ],
+  ],
+
   /* ── TANKLESS WATER HEATERS ─────────────────────────────── */
   [
     'title'           => 'Tankless Water Heaters',
