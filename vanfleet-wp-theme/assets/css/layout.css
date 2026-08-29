@@ -8,6 +8,7 @@
 .vf-grid--3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .vf-grid--4{grid-template-columns:repeat(4,minmax(0,1fr))}
 .vf-narrow{max-width:var(--container-narrow)}
+.vf-narrow--wide{max-width:960px}
 .vf-stack>*+*{margin-top:var(--space-5)}
 /* Split two-column layout */
 .vf-split{display:grid;grid-template-columns:0.9fr 1.1fr;gap:48px;align-items:center}

@@ -59,7 +59,7 @@ $eyebrow = ! empty( $service['parent'] )
 
 <!-- Main content: single symmetric column, no sidebar -->
 <section class="vf-section">
-  <div class="vf-container vf-narrow">
+  <div class="vf-container vf-narrow--wide">
 
     <?php if ( ! empty( $service['features'] ) ): ?>
       <p class="vf-eyebrow">What We Do</p>
@@ -174,7 +174,7 @@ $eyebrow = ! empty( $service['parent'] )
 
 <!-- FAQ -->
 <section class="vf-section">
-  <div class="vf-container vf-narrow">
+  <div class="vf-container vf-narrow--wide">
     <div class="vf-section-head">
       <p class="vf-eyebrow">FAQ</p>
       <h2><?php echo esc_html( $service['title'] . ' Questions' ); ?></h2>
