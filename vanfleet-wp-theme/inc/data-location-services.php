@@ -81,6 +81,18 @@ return [
       ],
       'faqs'          => [],
       'note'          => 'PA 156506 & MP-23-14',
+      'plumbing_intro' => 'In Coatesville, PA, it\'s essential to rely on experienced professionals to ensure your home\'s plumbing system operates seamlessly. At Van Fleet Services LLC, we understand the significance of reliable plumbing services tailored to meet our clients\' unique needs.',
+      'plumbing_body_sections' => [
+        [ 'heading' => 'Navigating the Maze of Residential Plumbing Needs', 'paragraphs' => [
+          'We offer no-cost estimates to help you clearly understand the work needed and budget considerations, and we\'ve partnered with Wisetack to provide flexible financing options so essential repairs and upgrades stay affordable. We extend a special 10% discount for military personnel, first responders, teachers, and senior citizens, and we recognize that each home\'s plumbing requirements are unique, so we offer customized service plans tailored to your home\'s distinctive features.',
+        ] ],
+        [ 'heading' => 'Unveiling the Expertise Behind Professional Plumbing Services', 'paragraphs' => [
+          'Our company holds a state-issued license and is fully insured, and we take pride in our Better Business Bureau membership, reflecting our commitment to integrity and professionalism. We offer comprehensive warranties on our services, and our steadfast dedication to 100% customer satisfaction guides every action we take, from the first consultation to the meticulous completion of the job.',
+        ] ],
+        [ 'heading' => 'From Leaks to Luxuries: Elevating Your Home with Top-Tier Plumbing Solutions', 'paragraphs' => [
+          'We help modernize your home with energy-efficient fixtures and advanced plumbing systems that offer convenience and control over water usage, provide expert advice and dependable service for kitchen and bathroom renovations, and offer prompt, efficient emergency repairs to minimize downtime and restore comfort as quickly as possible.',
+        ] ],
+      ],
     ],
     'downingtown-pa' => [
       'slug'          => 'downingtown-pa',
@@ -128,6 +140,21 @@ return [
       ],
       'faqs'          => [],
       'note'          => 'PA 156506 & MP-23-14 | Providing plumbing services throughout Chester Springs, Downingtown, Exton, West Chester, Malvern, and surrounding Chester County communities. | Copyright © 2026 Van Fleet Services. All rights reserved.',
+      'plumbing_intro' => 'Are you seeking reliable plumbing service in Downingtown and its surrounding areas? Look no further than Van Fleet Services LLC. Established in 2020, we pride ourselves on delivering top-tier plumbing solutions to residential, new construction, and commercial clients.',
+      'plumbing_body_sections' => [
+        [ 'heading' => 'Commercial Plumbing Excellence', 'paragraphs' => [
+          'Reliable plumbing is essential for smooth operations for businesses in Downingtown and the surrounding areas. We understand the unique needs of commercial properties and offer excellence in commercial plumbing services, from routine upkeep to intricate installations, with a focus on minimizing any interference with your business operations.',
+        ] ],
+        [ 'heading' => 'Piping Perfection: Choosing the Right Plumbing Fixtures', 'paragraphs' => [
+          'Selecting appropriate plumbing fixtures is essential to ensure optimal functionality, visual appeal, and efficiency. Whether you\'re remodeling your bathroom, upgrading your kitchen, or outfitting a new construction project, our team will assist you in choosing fixtures that meet your needs and budget.',
+        ] ],
+        [ 'heading' => 'Unlocking the Secrets to Seamless Plumbing', 'paragraphs' => [
+          'Achieving seamless plumbing requires regular maintenance checks to catch potential issues early, proper installation to prevent leaks and costly damage, efficient water usage through low-flow fixtures and water-efficient appliances, prompt repairs to prevent small leaks from escalating, and professional assistance for complex tasks or emergencies rather than risky DIY attempts.',
+        ] ],
+        [ 'heading' => 'From Drips to Disasters: Understanding Plumbing Emergencies', 'paragraphs' => [
+          'For a burst pipe, shut off the main water supply immediately and contact a qualified plumber. For a clogged drain, avoid chemical drain cleaners and use a plunger or plumbing snake instead. If you suspect a gas leak, leave immediately, contact the gas company, and then call a certified plumber. For an overflowing toilet, shut off the water supply at the valve near the base and use a plunger before calling for help if it remains clogged.',
+        ] ],
+      ],
     ],
     'phoenixville-pa' => [
       'slug'          => 'phoenixville-pa',
@@ -163,6 +190,18 @@ Ready to ensure your electrical systems are secure and efficient? Contact Van Fl
       ],
       'faqs'          => [],
       'note'          => 'License: PA 156506 & MP-23-14. Copyright © 2026 Van Fleet Services. All rights reserved.',
+      'plumbing_intro' => 'When plumbing issues arise, they can disrupt your day-to-day routine and potentially cause significant damage to your property. Van Fleet Services LLC is your premier destination for top-notch plumbing service in Phoenixville, PA, providing quality service since 2020.',
+      'plumbing_body_sections' => [
+        [ 'heading' => 'Smart Moves for Today\'s Homeowners: Choosing Professional Plumbing Care', 'paragraphs' => [
+          'Handling plumbing issues yourself might seem cost-effective, but it often leads to more significant problems and higher expenses down the line. The EPA estimates that household leaks can waste nearly 10,000 gallons of water annually — our licensed plumbers bring expertise, advanced tools, and certified skills to every job, and can provide preventative maintenance that saves you money on costly future repairs.',
+        ] ],
+        [ 'heading' => 'Total Plumbing Care: Solutions for Every Need', 'paragraphs' => [
+          'We provide fixture installation and repair for faucets, sinks, showers, and toilets; leak detection and repair using advanced equipment; professional drain cleaning; water heater installation, maintenance, and repair; pipe repair and replacement for cracked, corroded, or burst piping; and sump pump installation, repair, and maintenance to protect your basement from flooding.',
+        ] ],
+        [ 'heading' => 'Putting Your Home First: Our Dedicated Plumbing Approach', 'paragraphs' => [
+          'We treat your home with the same care and respect as our own, and prioritize crystal-clear, upfront pricing with no hidden fees or surprises. With 24/7 emergency services available, you can count on us whenever a plumbing problem strikes.',
+        ] ],
+      ],
     ],
     'pottstown-pa' => [
       'slug'          => 'pottstown-pa',
@@ -205,6 +244,21 @@ Ready to ensure your electrical systems are secure and efficient? Contact Van Fl
       ],
       'faqs'          => [],
       'note'          => 'PA 156506 & MP-23-14',
+      'plumbing_intro' => 'Does your home have a plumbing problem that\'s causing a headache? A dripping tap, slow-draining sink, or faulty water heater can interrupt your daily activities. Van Fleet Services LLC is your trusted partner for all your plumbing needs in Pottstown, PA.',
+      'plumbing_body_sections' => [
+        [ 'heading' => 'The Importance of Expertise in Plumbing', 'paragraphs' => [
+          'Expert plumbers diagnose and fix problems efficiently, preventing costly future repairs; rigorously follow up-to-date safety regulations; utilize state-of-the-art tools and cutting-edge techniques; and stand behind their work with warranties and guarantees, giving you peace of mind.',
+        ] ],
+        [ 'heading' => 'Maintaining Your Plumbing System', 'paragraphs' => [
+          'We recommend yearly plumbing inspections to catch problems early, mindful use to prevent clogs, prompt attention to even minor leaks, water softening to address hard water mineral buildup, and knowing the location of your main shut-off valve so you can respond quickly during an emergency.',
+        ] ],
+        [ 'heading' => 'Prompt and Prepared: Around-the-Clock Plumbing Solutions', 'paragraphs' => [
+          'Plumbing emergencies don\'t follow regular business hours, so we\'re dedicated to providing round-the-clock service with immediate response times. We also offer free estimates so you understand the scope and cost of the job before any work begins.',
+        ] ],
+        [ 'heading' => 'All-Encompassing Plumbing Services', 'paragraphs' => [
+          'From plumbing repair and leak detection to water heater services, repiping and burst pipe repair, faucet and toilet services, and sump pump installation and service, our licensed professionals handle every part of home plumbing work for Pottstown homeowners.',
+        ] ],
+      ],
     ],
     'west-chester-pa' => [
       'slug'          => 'west-chester-pa',
@@ -239,6 +293,21 @@ Ready to ensure your electrical systems are secure and efficient? Contact Van Fl
       ],
       'faqs'          => [],
       'note'          => 'License: PA 156506 & MP-23-14',
+      'plumbing_intro' => 'Are you currently grappling with the complexities of plumbing issues, desperately seeking a steadfast solution? Look no further than Van Fleet Services LLC, your go-to choice for reliable plumbing service in West Chester, PA. Since 2020, our locally owned and operated company has been dedicated to providing the highest quality service, driven by our motto, "Always do the Right Thing."',
+      'plumbing_body_sections' => [
+        [ 'heading' => 'Unlocking the Benefits: Why Professional Plumbing Services Matter', 'paragraphs' => [
+          'Professional plumbing services offer safety through thorough training and adherence to protocols, cost-effective long-term solutions compared to DIY attempts, advanced equipment and tools for precise results, compliance with local codes and regulations, and time savings that minimize disruption to your day-to-day life.',
+        ] ],
+        [ 'heading' => 'Expert Plumbing Services Tailored to Your Needs', 'paragraphs' => [
+          'We offer leak detection and repair using advanced technology, powerful drain cleaning equipment, water heater installation and repair, fixture installation and repair for faucets and toilets, sump pump services to protect against basement flooding, and full plumbing support for bathroom and kitchen remodels.',
+        ] ],
+        [ 'heading' => 'Always Ready, Always Reliable: Emergency Plumbing Experts', 'paragraphs' => [
+          'We offer round-the-clock emergency services, equipped with a fleet of vehicles stocked with advanced tools, ready to spring into action at any hour — from burst pipes to sewer line backups, we have the expertise to handle everything.',
+        ] ],
+        [ 'heading' => 'Your Home, Our Priority', 'paragraphs' => [
+          'We put 100 percent effort into every task and believe in transparency, offering upfront and honest pricing with no hidden fees or surprises.',
+        ] ],
+      ],
     ],
   ],
   'pages' => [
@@ -1564,15 +1633,17 @@ Our technicians are dedicated to ensuring your home has a reliable backup power 
       'city_slug'     => 'chester-springs-pa',
       'service_slug'  => 'water-softener',
       'title'         => 'Water Softener',
-      'intro'         => 'Hard water causes stubborn stains, scale buildup, and reduced appliance efficiency. Van Fleet Services LLC offers water softener solutions to remove mineral ions and prevent these problems in Chester Springs, PA.',
+      'intro'         => 'Hard water presents persistent challenges including stubborn stains, scale accumulation in pipes, and reduced appliance performance. Van Fleet Services LLC provides dependable water softening solutions that eliminate mineral ions and prevent hard water damage in Chester Springs, PA.',
       'bullets'       => [],
       'body_sections' => [
         [ 'heading' => 'How Hard Water Affects Your Home', 'paragraphs' => [
-          'Hard water impacts daily life through appliance wear, plumbing issues, skin and hair problems, laundry difficulties, and increased energy bills. Mineral deposits accumulate in dishwashers and washing machines, causing inefficiency. These minerals also corrode pipes, damage skin and hair, leave spots on dishes, and force appliances to consume more energy, shortening their lifespan.',
+          'Calcium and magnesium minerals accumulate in dishwashers, washing machines, and coffee makers, reducing efficiency and causing frequent malfunctions. Mineral deposits also accumulate in plumbing systems, causing clogs, reduced water pressure, and corrosion. Hard water residue leaves skin and hair feeling dry and dull, complicates washing clothes and dishes, and forces water heaters and dishwashers to use more energy, shortening their lifespan.',
         ] ],
-        [ 'heading' => 'Advanced Water Softener Solutions', 'paragraphs' => [
-          'Van Fleet Services offers salt-based systems using ion exchange, salt-free systems using template-assisted crystallization, and magnetic water softeners that use magnetic fields to prevent scale formation.',
-          'Expert technicians provide personalized installation and maintenance, with regular upkeep ensuring optimal performance, 24/7 emergency service, financing through Wisetack, free estimates, and warranties.',
+        [ 'heading' => 'Advanced Water Softener Solutions for Every Home', 'paragraphs' => [
+          'We provide salt-based water softeners using ion exchange to remove calcium and magnesium ions, salt-free systems using template-assisted crystallization for those reducing sodium intake, and magnetic water softeners that manipulate magnetic fields to prevent scale formation with simple installation and no maintenance.',
+        ] ],
+        [ 'heading' => 'Installation and Maintenance by Our Experts', 'paragraphs' => [
+          'Our licensed and insured professionals ensure correct, efficient installation, backed by comprehensive maintenance plans that guarantee continuous peak performance and round-the-clock emergency service. We assess your water quality, consumption patterns, and specific concerns to recommend the optimal plan, with Wisetack financing, free estimates, and warranties available.',
         ] ],
       ],
       'faqs'          => [],
@@ -1588,10 +1659,13 @@ Our technicians are dedicated to ensuring your home has a reliable backup power 
       'bullets'       => [],
       'body_sections' => [
         [ 'heading' => 'Types of Well Pumps: Find the Right Fit', 'paragraphs' => [
-          'We specialize in multiple well pump system types. Submersible pumps work best for deep wells, operating underwater with high efficiency and quiet performance. Jet pumps suit shallow wells of 25 feet or less and operate above ground using suction. Constant pressure pumps maintain consistent water pressure regardless of demand, and solar-powered pumps provide a sustainable solution for remote or off-grid locations.',
+          'Submersible pumps are ideal for deep wells, operating underwater with high efficiency and quiet performance. Jet pumps suit shallow wells of 25 feet or less, installed above ground and using suction to draw water. Constant pressure pumps maintain consistent water pressure regardless of demand by adjusting speed based on usage, and solar-powered pumps offer a sustainable water supply solution for remote or off-grid properties.',
         ] ],
         [ 'heading' => 'Extensive Well Pump Services at Your Doorstep', 'paragraphs' => [
-          'We provide services beyond installation, including routine maintenance and emergency repairs. Our licensed and insured experts operate fully stocked service vans, with maintenance plans designed to extend pump lifespan and prevent failures.',
+          'Beyond installation, our licensed and insured experts operate fully stocked service vans to handle routine maintenance and emergency repairs, with comprehensive plans designed to prolong pump lifespan and prevent unexpected failures.',
+        ] ],
+        [ 'heading' => 'Professional Service and Advanced Technology', 'paragraphs' => [
+          'We combine professional service with industry-leading equipment and techniques to troubleshoot and resolve issues quickly, minimizing downtime. Whether upgrading to a more efficient model or needing detailed repairs, our team ensures your well pump system performs at its best, backed by financing through Wisetack and available warranties.',
         ] ],
       ],
       'faqs'          => [],
@@ -1603,14 +1677,17 @@ Our technicians are dedicated to ensuring your home has a reliable backup power 
       'city_slug'     => 'chester-springs-pa',
       'service_slug'  => 'sump-pumps',
       'title'         => 'Sump Pumps',
-      'intro'         => 'Sump pumps are pivotal in safeguarding your home from water damage, particularly in areas like Chester Springs, PA, where heavy rainfalls are common.',
+      'intro'         => 'Sump pumps are pivotal in safeguarding your home from water damage, particularly in areas like Chester Springs, PA, where heavy rainfalls are common. Established in 2020, Van Fleet Services LLC brings a commitment to "Always do the Right Thing" to every installation, maintenance visit, and repair.',
       'bullets'       => [],
       'body_sections' => [
         [ 'heading' => 'Why Sump Pumps Are Essential for Basements', 'paragraphs' => [
-          'A functioning sump pump prevents flooding, protects your property from water accumulation, prevents mold and mildew growth, preserves interior finishes, and mitigates the health risks of poor indoor air quality.',
+          'A functioning sump pump prevents flooding during heavy rainfall or snowmelt, protects your property from costly water damage, prevents mold and mildew growth from moist conditions, preserves interior finishes like drywall and flooring, and mitigates the health risks that come with poor indoor air quality.',
         ] ],
-        [ 'heading' => 'Installation, Repair, and Maintenance', 'paragraphs' => [
-          'We offer expert installations for residential, new construction, and commercial properties with customized recommendations, licensed technicians, and financing through Wisetack. Our 24/7 emergency service diagnoses and repairs float switch malfunctions, clogged discharge lines, and power outages, while our maintenance plans cover routine inspections, cleaning, testing, and electrical component verification.',
+        [ 'heading' => 'Installation and Emergency Repairs', 'paragraphs' => [
+          'Our licensed and insured specialists recommend the optimal sump pump system for your specific needs and budget, whether for new construction or an existing home, with financing available through Wisetack. Our 24/7 emergency service diagnoses and repairs malfunctioning float switches, clogged discharge lines, and power-outage failures, since sump pump problems are most urgent during heavy rain or rapid snowmelt.',
+        ] ],
+        [ 'heading' => 'Proactive Maintenance to Keep Your Basement Dry', 'paragraphs' => [
+          'Our comprehensive maintenance plans include routine inspections, cleaning, and testing of the pump\'s operation, the discharge line, and the backup battery system, helping prevent costly repairs and extend the system\'s lifespan through regular service intervals and priority service.',
         ] ],
       ],
       'faqs'          => [],
@@ -1631,6 +1708,12 @@ Our technicians are dedicated to ensuring your home has a reliable backup power 
         [ 'heading' => 'Choosing the Right Water Heater', 'paragraphs' => [
           'Selection comes down to capacity matched to your household, energy efficiency to reduce utility bills, fuel type based on availability and cost, and available installation space. Our experienced, code-compliant technicians assess your unique requirements and recommend the right model.',
         ] ],
+        [ 'heading' => 'Our Services in Chester Springs, PA', 'paragraphs' => [
+          'We handle water heater installation for new or replacement units, water heater repair to restore your hot water supply quickly, routine water heater maintenance to keep your unit performing efficiently, and 24/7 emergency service so you\'re never left without hot water when you need it most.',
+        ] ],
+        [ 'heading' => 'Tips for Enhancing Efficiency', 'paragraphs' => [
+          'Insulating the tank of a storage water heater reduces heat loss, setting the thermostat to 120°F saves energy and prevents scalding, fixing leaks promptly prevents water and energy waste, and using less hot water through shorter showers and cold-water laundry cycles further lowers energy costs.',
+        ] ],
       ],
       'faqs'          => [],
       'note'          => 'PA 156506 & MP-23-14. Providing plumbing services throughout Chester Springs, Downingtown, Exton, West Chester, Malvern, and surrounding Chester County communities. Copyright © 2026 Van Fleet Services. All rights reserved.',
@@ -1647,8 +1730,11 @@ Our technicians are dedicated to ensuring your home has a reliable backup power 
         [ 'heading' => 'The Advantages of Tankless Water Heaters', 'paragraphs' => [
           'Tankless systems provide on-demand hot water that never runs out, with a compact wall-mounted design that optimizes space, energy efficiency that reduces utility bills by heating water only when needed, and an extended lifespan compared to traditional tank heaters.',
         ] ],
+        [ 'heading' => 'Selecting Your Tankless Water Heater System', 'paragraphs' => [
+          'We help you assess your household or business hot water demand to determine the right size and capacity, choose between gas and electric units based on your energy preferences, consider your available installation space, and explore flexible financing options with Wisetack.',
+        ] ],
         [ 'heading' => 'Expert Installation Services', 'paragraphs' => [
-          'Installation includes a full site assessment, work by certified technicians, testing and commissioning to verify system functionality and efficiency, and comprehensive maintenance plans afterward.',
+          'Installation includes a full site assessment to determine the optimal location, work by certified technicians handling every step with precision, testing and commissioning to verify system functionality and efficiency, and comprehensive maintenance plans afterward to prolong the unit\'s lifespan.',
         ] ],
       ],
       'faqs'          => [],
@@ -1660,14 +1746,17 @@ Our technicians are dedicated to ensuring your home has a reliable backup power 
       'city_slug'     => 'chester-springs-pa',
       'service_slug'  => 'plumber',
       'title'         => 'Plumber',
-      'intro'         => 'Whether a leaky faucet disrupts the tranquility of your home or a major pipe burst threatens your business operations, Van Fleet Services LLC is a reliable partner for Chester Springs plumbing needs. Established in 2020 as a locally owned business with a 4.9-star rating on Google, we offer 24/7 emergency services.',
+      'intro'         => 'Whether a leaky faucet disrupts the tranquility of your home or a major pipe burst threatens your business operations, Van Fleet Services LLC is a reliable partner for Chester Springs plumbing needs. Established in 2020 as a locally owned business with a 4.9-star rating on Google, we offer 24/7 emergency services and financing options through Wisetack.',
       'bullets'       => [],
       'body_sections' => [
         [ 'heading' => 'Comprehensive Plumbing Services We Offer', 'paragraphs' => [
-          'We provide repair, leak detection, water heater services, repiping, burst pipe repair, faucet repair, sump pump service, and toilet repair, with a commitment to professionalism, expertise, and quality.',
+          'We handle plumbing repair from minor fixes to major overhauls, leak detection using advanced techniques to pinpoint hidden leaks, water heater installation and repair, repiping for aging systems, burst pipe repair, faucet repair, sump pump installation and repair, and toilet repair.',
         ] ],
         [ 'heading' => 'Common Plumbing Problems We Solve', 'paragraphs' => [
-          'We diagnose and repair leaky faucets and pipes, water heater malfunctions, and clogged drains and sewers quickly and effectively, backed by a 100% satisfaction guarantee and financing options.',
+          'We diagnose and repair leaky faucets and pipes that waste water and drive up bills, troubleshoot and repair water heater malfunctions that leave you without hot water, and efficiently clear clogged drains and sewers to restore proper flow.',
+        ] ],
+        [ 'heading' => 'Your Comfort, Our Priority', 'paragraphs' => [
+          'Our customer-centric approach means understanding your unique needs and delivering tailored solutions, with 24/7 emergency services, financing options, promotion offers, a 100% satisfaction guarantee, and personalized attention to detail at every step.',
         ] ],
       ],
       'faqs'          => [],
@@ -1682,11 +1771,14 @@ Our technicians are dedicated to ensuring your home has a reliable backup power 
       'intro'         => 'Hard water can cause numerous problems in your household, from scale buildup in pipes to dry skin and dull laundry. Van Fleet Services LLC brings expertise and client satisfaction to water softener service in Coatesville, PA.',
       'bullets'       => [],
       'body_sections' => [
-        [ 'heading' => 'How Water Softeners Work', 'paragraphs' => [
-          'Our systems use an ion exchange process with resin beads and regeneration cycles to remove calcium and magnesium ions from your water supply.',
+        [ 'heading' => 'How a Water Softener Works', 'paragraphs' => [
+          'Our systems use an ion exchange process with resin beads that capture calcium and magnesium ions as hard water passes through, replacing them with sodium or potassium ions. A regeneration cycle flushes the beads with a saltwater solution from the brine tank to recharge them for another round of softening.',
         ] ],
-        [ 'heading' => 'Benefits and Services', 'paragraphs' => [
-          'Soft water extends the lifespan of your plumbing system, improves skin and hair condition, brightens laundry, and leaves dishes spot-free. We provide consultation, professional installation, regular maintenance, and 24/7 emergency support, backed by a 100% satisfaction guarantee.',
+        [ 'heading' => 'The Advantages of Water Softening', 'paragraphs' => [
+          'Soft water extends the lifespan of dishwashers, washing machines, and water heaters by preventing scale buildup, helps maintain healthier skin and hair, brightens laundry while requiring less detergent, keeps dishes and glassware spot-free, and reduces soap scum for easier cleaning throughout the home.',
+        ] ],
+        [ 'heading' => 'Our All-Inclusive Water Softening Services', 'paragraphs' => [
+          'We start with a thorough consultation and assessment of your water quality and needs, provide professional installation adhering to the highest safety standards, offer regular maintenance including resin bead cleaning and brine tank refills, and stand ready with 24/7 emergency support and a 100% satisfaction guarantee.',
         ] ],
       ],
       'faqs'          => [],
@@ -1702,10 +1794,13 @@ Our technicians are dedicated to ensuring your home has a reliable backup power 
       'bullets'       => [],
       'body_sections' => [
         [ 'heading' => 'High-Quality Well Pumps for Every Home', 'paragraphs' => [
-          'Whether you need a new well pump installation, repairs, or maintenance, our team covers submersible, jet, and constant pressure well pump options tailored to your specific water needs and usage patterns.',
+          'Whether you need a new well pump installation, repairs, or maintenance, our team covers submersible pumps for deep wells, jet pumps for shallow wells, and constant pressure well pumps tailored to your specific water needs and usage patterns.',
         ] ],
         [ 'heading' => 'Professional Service You Can Rely On', 'paragraphs' => [
-          'Our experienced technicians offer installation, repairs, maintenance, emergency services, and water testing and treatment solutions to ensure safe well water for your household.',
+          'Our experienced technicians offer routine maintenance and emergency repairs, and provide water testing and treatment solutions to ensure your well water is safe for consumption, working with top brands in the industry for lasting reliability.',
+        ] ],
+        [ 'heading' => 'Sustainable Living: Water Efficiency Benefits', 'paragraphs' => [
+          'Our well pumps are designed to be energy-efficient, reducing overall energy consumption and lowering utility bills, help conserve water through efficient delivery, minimize waste through precise operation, and use sustainable, eco-friendly materials that contribute to a greener environment.',
         ] ],
       ],
       'faqs'          => [],
@@ -1717,14 +1812,17 @@ Our technicians are dedicated to ensuring your home has a reliable backup power 
       'city_slug'     => 'coatesville-pa',
       'service_slug'  => 'water-heater-installation',
       'title'         => 'Water Heater Installation',
-      'intro'         => 'Proper installation is vital to ensuring your water heater efficiency, longevity, and safety. Van Fleet Services LLC offers tailored installation services in Coatesville, PA with experienced technicians who prioritize precision and attention to detail.',
+      'intro'         => 'Proper installation is vital to ensuring your water heater\'s efficiency, longevity, and safety. Van Fleet Services LLC offers tailored installation services in Coatesville, PA with experienced technicians who prioritize precision and attention to detail.',
       'bullets'       => [],
       'body_sections' => [
         [ 'heading' => 'Water Heater Systems We Install', 'paragraphs' => [
-          'We install tankless models that provide hot water on demand while reducing energy costs, traditional tank systems for households needing high-volume hot water storage in gas and electric options, and solar water heaters designed to lower energy expenses.',
+          'We install tankless models that provide hot water on demand while reducing energy costs, traditional tank systems in gas and electric options for households needing high-volume hot water storage, and solar water heaters designed to lower energy expenses.',
         ] ],
         [ 'heading' => 'Our Installation Process', 'paragraphs' => [
-          'Installation follows six steps: an initial consultation assessing your needs, site preparation, precise installation following manufacturer specs and building codes, rigorous system testing, responsible cleanup and disposal, and customer education on features and maintenance.',
+          'Installation follows six steps: an initial consultation to understand your hot water needs, site preparation including safe removal of the old unit, precise installation following manufacturer specs and building codes, rigorous system testing for leaks and safety features, responsible cleanup and disposal, and customer education on features, maintenance, and warranty information.',
+        ] ],
+        [ 'heading' => 'The Value of Quality Installation', 'paragraphs' => [
+          'A professionally installed water heater operates more efficiently, reduces energy consumption, lasts longer, and prevents hazards like gas leaks or electrical issues — a smart, long-term investment in your Coatesville home\'s comfort and value.',
         ] ],
       ],
       'faqs'          => [],
@@ -1740,10 +1838,13 @@ Our technicians are dedicated to ensuring your home has a reliable backup power 
       'bullets'       => [],
       'body_sections' => [
         [ 'heading' => 'Selecting the Right Sump Pump', 'paragraphs' => [
-          'Choosing the right sump pump comes down to pump type (submersible versus pedestal), horsepower rating, battery backup capability, pump capacity, and switch type. We guide customers through selection to keep their home dry and protected.',
+          'Choosing the right sump pump comes down to pump type (submersible versus pedestal), horsepower rating, battery backup capability for protection during power outages, pump capacity measured in gallons per hour, and switch type. We guide customers through selection to keep their home dry and protected.',
+        ] ],
+        [ 'heading' => 'How a Sump Pump Protects Your Home', 'paragraphs' => [
+          'Water collects in a sump basin at the lowest point of your basement; when the water level reaches a set point, the pump activates automatically and discharges the water safely away from your foundation, operating continuously if needed during heavy rainfall and switching to battery backup during power outages.',
         ] ],
         [ 'heading' => 'Complete Sump Pump Services', 'paragraphs' => [
-          'We offer professional installation, regular maintenance, 24/7 emergency repairs, and upgrades or replacements for outdated systems, backed by licensed, insured, and experienced technicians.',
+          'We offer professional installation optimized for performance and longevity, regular maintenance including check-ups, cleaning, and testing, 24/7 emergency repairs to minimize flooding risk, and upgrades or replacements for outdated or failing systems, backed by licensed, insured, and experienced technicians.',
         ] ],
       ],
       'faqs'          => [],
@@ -1761,8 +1862,11 @@ Our technicians are dedicated to ensuring your home has a reliable backup power 
         [ 'heading' => 'How a Water Softener Helps', 'paragraphs' => [
           'Soft water prevents scale buildup that damages pipes and systems, enhances appliance efficiency, improves water heater performance and energy costs, softens skin and hair, and helps soaps and detergents lather better and rinse cleaner.',
         ] ],
+        [ 'heading' => 'Finding the Perfect Fit', 'paragraphs' => [
+          'We assess your water usage and analyze your water\'s hardness level to customize a solution, recommend system size based on your household and family water use, and offer a range of options from salt-based to salt-free systems to suit your preferences.',
+        ] ],
         [ 'heading' => 'Our Services', 'paragraphs' => [
-          'We assess your water usage and hardness, size the right system for your space, and provide installation, maintenance, and repairs backed by 24/7 emergency service, experienced technicians, and warranty coverage.',
+          'We provide installation from trusted brands, comprehensive maintenance to maximize system life and prevent costly repairs, and expert repairs backed by 24/7 emergency service, experienced technicians, and a warranty that\'s unmatched in the industry.',
         ] ],
       ],
       'faqs'          => [],
@@ -1783,6 +1887,9 @@ Our technicians are dedicated to ensuring your home has a reliable backup power 
         [ 'heading' => 'Advanced Technology, Real Savings', 'paragraphs' => [
           'We provide high-efficiency systems that deliver superior performance while minimizing energy consumption, including smart pump technology with remote monitoring and automated controls, plus eco-friendly options that can reduce water bills and add long-term value to your property.',
         ] ],
+        [ 'heading' => 'Homegrown Quality', 'paragraphs' => [
+          'As a locally owned and operated business deeply rooted in the West Chester community, our team is insured and licensed by the state (PA 156506 & MP-23-14) to perform plumbing work, and we stand by our work with a 100% satisfaction guarantee and a 4.9-star rating on Google.',
+        ] ],
       ],
       'faqs'          => [],
       'note'          => 'PA 156506 & MP-23-14. Providing plumbing services throughout Chester Springs, Downingtown, Exton, West Chester, Malvern, and surrounding Chester County communities. Copyright © 2026 Van Fleet Services. All rights reserved.',
@@ -1801,6 +1908,9 @@ Our technicians are dedicated to ensuring your home has a reliable backup power 
         ] ],
         [ 'heading' => 'Safety First', 'paragraphs' => [
           'We perform detailed safety inspections, ensure proper ventilation for gas systems to prevent carbon monoxide buildup, use high-quality materials to prevent leaks, set appropriate temperature regulation, and install emergency shutoff valves while educating homeowners on their use.',
+        ] ],
+        [ 'heading' => 'Beyond Installation', 'paragraphs' => [
+          'We are committed to being your trusted partner for future maintenance and repair needs too, offering scheduled maintenance to extend your unit\'s life, prompt repairs using top-quality parts, and seamless upgrades or replacements when it\'s time, all backed by 24/7 availability and a 4.9-star Google rating.',
         ] ],
       ],
       'faqs'          => [],

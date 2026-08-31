@@ -56,7 +56,7 @@ $faqs = ! empty( $city['faqs'] ) ? $city['faqs'] : vanfleet_location_service_faq
   'crumbs'  => $crumbs,
   'eyebrow' => 'Plumbing Service · ' . $county,
   'title'   => "Plumbing Services in {$city_name}, {$state}",
-  'intro'   => "Van Fleet Services LLC provides licensed plumbing service for {$city_name} homeowners — repairs, installations, and 24/7 emergency response from a local, trusted team.",
+  'intro'   => ! empty( $city['plumbing_intro'] ) ? $city['plumbing_intro'] : "Van Fleet Services LLC provides licensed plumbing service for {$city_name} homeowners — repairs, installations, and 24/7 emergency response from a local, trusted team.",
   'bullets' => [ 'Same-day service', 'Upfront pricing', 'Licensed pros', '24/7 emergency' ],
   'cta_primary_label' => 'Call Now · 24/7',
 ] ); ?>
@@ -81,6 +81,17 @@ $faqs = ! empty( $city['faqs'] ) ? $city['faqs'] : vanfleet_location_service_faq
         <li>Tankless and tank-style water heaters</li>
         <li>24/7 emergency plumbing</li>
       </ul>
+
+      <?php if ( ! empty( $city['plumbing_body_sections'] ) ): ?>
+        <div class="vf-page-content">
+          <?php foreach ( $city['plumbing_body_sections'] as $section ): ?>
+            <?php if ( ! empty( $section['heading'] ) ): ?><h2><?php echo esc_html( $section['heading'] ); ?></h2><?php endif; ?>
+            <?php foreach ( (array) ( $section['paragraphs'] ?? [] ) as $p ): ?>
+              <p><?php echo esc_html( $p ); ?></p>
+            <?php endforeach; ?>
+          <?php endforeach; ?>
+        </div>
+      <?php endif; ?>
 
       <div class="vf-photo-placeholder" style="margin:var(--space-8) 0;height:260px;">
         <img
