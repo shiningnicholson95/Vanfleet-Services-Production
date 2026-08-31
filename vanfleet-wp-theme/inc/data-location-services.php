@@ -1556,5 +1556,256 @@ Our technicians are dedicated to ensuring your home has a reliable backup power 
       'faqs'          => [],
       'note'          => 'License: PA 156506 & MP-23-14. Copyright © 2026 Van Fleet Services. All rights reserved. | Accessibility Statement | Privacy Policy',
     ],
+
+    /* ── PLUMBING COMBO PAGES — recreated from staging 2026-08-31 ── */
+
+    'plumbing/chester-springs-pa/water-softener' => [
+      'slug'          => 'plumbing/chester-springs-pa/water-softener',
+      'city_slug'     => 'chester-springs-pa',
+      'service_slug'  => 'water-softener',
+      'title'         => 'Water Softener',
+      'intro'         => 'Hard water causes stubborn stains, scale buildup, and reduced appliance efficiency. Van Fleet Services LLC offers water softener solutions to remove mineral ions and prevent these problems in Chester Springs, PA.',
+      'bullets'       => [],
+      'body_sections' => [
+        [ 'heading' => 'How Hard Water Affects Your Home', 'paragraphs' => [
+          'Hard water impacts daily life through appliance wear, plumbing issues, skin and hair problems, laundry difficulties, and increased energy bills. Mineral deposits accumulate in dishwashers and washing machines, causing inefficiency. These minerals also corrode pipes, damage skin and hair, leave spots on dishes, and force appliances to consume more energy, shortening their lifespan.',
+        ] ],
+        [ 'heading' => 'Advanced Water Softener Solutions', 'paragraphs' => [
+          'Van Fleet Services offers salt-based systems using ion exchange, salt-free systems using template-assisted crystallization, and magnetic water softeners that use magnetic fields to prevent scale formation.',
+          'Expert technicians provide personalized installation and maintenance, with regular upkeep ensuring optimal performance, 24/7 emergency service, financing through Wisetack, free estimates, and warranties.',
+        ] ],
+      ],
+      'faqs'          => [],
+      'note'          => 'PA 156506 & MP-23-14. Providing plumbing services throughout Chester Springs, Downingtown, Exton, West Chester, Malvern, and surrounding Chester County communities. Copyright © 2026 Van Fleet Services. All rights reserved.',
+    ],
+
+    'plumbing/chester-springs-pa/well-pumps' => [
+      'slug'          => 'plumbing/chester-springs-pa/well-pumps',
+      'city_slug'     => 'chester-springs-pa',
+      'service_slug'  => 'well-pumps',
+      'title'         => 'Well Pumps',
+      'intro'         => 'Van Fleet Services LLC provides well pump solutions for Chester Springs, PA, established in 2020 with a commitment to integrity. We offer comprehensive services for residential, new construction, and commercial properties, with 24/7 availability for installation and maintenance.',
+      'bullets'       => [],
+      'body_sections' => [
+        [ 'heading' => 'Types of Well Pumps: Find the Right Fit', 'paragraphs' => [
+          'We specialize in multiple well pump system types. Submersible pumps work best for deep wells, operating underwater with high efficiency and quiet performance. Jet pumps suit shallow wells of 25 feet or less and operate above ground using suction. Constant pressure pumps maintain consistent water pressure regardless of demand, and solar-powered pumps provide a sustainable solution for remote or off-grid locations.',
+        ] ],
+        [ 'heading' => 'Extensive Well Pump Services at Your Doorstep', 'paragraphs' => [
+          'We provide services beyond installation, including routine maintenance and emergency repairs. Our licensed and insured experts operate fully stocked service vans, with maintenance plans designed to extend pump lifespan and prevent failures.',
+        ] ],
+      ],
+      'faqs'          => [],
+      'note'          => 'PA 156506 & MP-23-14. Providing plumbing services throughout Chester Springs, Downingtown, Exton, West Chester, Malvern, and surrounding Chester County communities. Copyright © 2026 Van Fleet Services. All rights reserved.',
+    ],
+
+    'plumbing/chester-springs-pa/sump-pumps' => [
+      'slug'          => 'plumbing/chester-springs-pa/sump-pumps',
+      'city_slug'     => 'chester-springs-pa',
+      'service_slug'  => 'sump-pumps',
+      'title'         => 'Sump Pumps',
+      'intro'         => 'Sump pumps are pivotal in safeguarding your home from water damage, particularly in areas like Chester Springs, PA, where heavy rainfalls are common.',
+      'bullets'       => [],
+      'body_sections' => [
+        [ 'heading' => 'Why Sump Pumps Are Essential for Basements', 'paragraphs' => [
+          'A functioning sump pump prevents flooding, protects your property from water accumulation, prevents mold and mildew growth, preserves interior finishes, and mitigates the health risks of poor indoor air quality.',
+        ] ],
+        [ 'heading' => 'Installation, Repair, and Maintenance', 'paragraphs' => [
+          'We offer expert installations for residential, new construction, and commercial properties with customized recommendations, licensed technicians, and financing through Wisetack. Our 24/7 emergency service diagnoses and repairs float switch malfunctions, clogged discharge lines, and power outages, while our maintenance plans cover routine inspections, cleaning, testing, and electrical component verification.',
+        ] ],
+      ],
+      'faqs'          => [],
+      'note'          => 'PA 156506 & MP-23-14. Providing plumbing services throughout Chester Springs, Downingtown, Exton, West Chester, Malvern, and surrounding Chester County communities. Copyright © 2026 Van Fleet Services. All rights reserved.',
+    ],
+
+    'plumbing/chester-springs-pa/water-heaters' => [
+      'slug'          => 'plumbing/chester-springs-pa/water-heaters',
+      'city_slug'     => 'chester-springs-pa',
+      'service_slug'  => 'water-heaters',
+      'title'         => 'Water Heaters',
+      'intro'         => 'Water heaters are critical in our daily routines, from hot showers to clean dishes. Van Fleet Services LLC keeps Chester Springs homes warm and comfortable throughout the year.',
+      'bullets'       => [],
+      'body_sections' => [
+        [ 'heading' => 'Types of Water Heaters', 'paragraphs' => [
+          'We work with five main varieties: storage tank water heaters (the most common, available in electric, natural gas, and propane), tankless water heaters (on-demand units offering continuous hot water and greater efficiency), heat pump water heaters (transferring heat rather than generating it), solar water heaters (an eco-friendly system using solar energy), and condensing water heaters (more efficient by capturing exhaust gases).',
+        ] ],
+        [ 'heading' => 'Choosing the Right Water Heater', 'paragraphs' => [
+          'Selection comes down to capacity matched to your household, energy efficiency to reduce utility bills, fuel type based on availability and cost, and available installation space. Our experienced, code-compliant technicians assess your unique requirements and recommend the right model.',
+        ] ],
+      ],
+      'faqs'          => [],
+      'note'          => 'PA 156506 & MP-23-14. Providing plumbing services throughout Chester Springs, Downingtown, Exton, West Chester, Malvern, and surrounding Chester County communities. Copyright © 2026 Van Fleet Services. All rights reserved.',
+    ],
+
+    'plumbing/chester-springs-pa/tankless-water-heaters' => [
+      'slug'          => 'plumbing/chester-springs-pa/tankless-water-heaters',
+      'city_slug'     => 'chester-springs-pa',
+      'service_slug'  => 'tankless-water-heaters',
+      'title'         => 'Tankless Water Heaters',
+      'intro'         => 'Van Fleet Services LLC is a premier destination for tankless water heaters in Chester Springs, PA, offering top-notch solutions tailored to your home or business.',
+      'bullets'       => [],
+      'body_sections' => [
+        [ 'heading' => 'The Advantages of Tankless Water Heaters', 'paragraphs' => [
+          'Tankless systems provide on-demand hot water that never runs out, with a compact wall-mounted design that optimizes space, energy efficiency that reduces utility bills by heating water only when needed, and an extended lifespan compared to traditional tank heaters.',
+        ] ],
+        [ 'heading' => 'Expert Installation Services', 'paragraphs' => [
+          'Installation includes a full site assessment, work by certified technicians, testing and commissioning to verify system functionality and efficiency, and comprehensive maintenance plans afterward.',
+        ] ],
+      ],
+      'faqs'          => [],
+      'note'          => 'PA 156506 & MP-23-14. Providing plumbing services throughout Chester Springs, Downingtown, Exton, West Chester, Malvern, and surrounding Chester County communities. Copyright © 2026 Van Fleet Services. All rights reserved.',
+    ],
+
+    'plumbing/chester-springs-pa/plumber' => [
+      'slug'          => 'plumbing/chester-springs-pa/plumber',
+      'city_slug'     => 'chester-springs-pa',
+      'service_slug'  => 'plumber',
+      'title'         => 'Plumber',
+      'intro'         => 'Whether a leaky faucet disrupts the tranquility of your home or a major pipe burst threatens your business operations, Van Fleet Services LLC is a reliable partner for Chester Springs plumbing needs. Established in 2020 as a locally owned business with a 4.9-star rating on Google, we offer 24/7 emergency services.',
+      'bullets'       => [],
+      'body_sections' => [
+        [ 'heading' => 'Comprehensive Plumbing Services We Offer', 'paragraphs' => [
+          'We provide repair, leak detection, water heater services, repiping, burst pipe repair, faucet repair, sump pump service, and toilet repair, with a commitment to professionalism, expertise, and quality.',
+        ] ],
+        [ 'heading' => 'Common Plumbing Problems We Solve', 'paragraphs' => [
+          'We diagnose and repair leaky faucets and pipes, water heater malfunctions, and clogged drains and sewers quickly and effectively, backed by a 100% satisfaction guarantee and financing options.',
+        ] ],
+      ],
+      'faqs'          => [],
+      'note'          => 'PA 156506 & MP-23-14. Providing plumbing services throughout Chester Springs, Downingtown, Exton, West Chester, Malvern, and surrounding Chester County communities. Copyright © 2026 Van Fleet Services. All rights reserved.',
+    ],
+
+    'plumbing/coatesville-pa/water-softener' => [
+      'slug'          => 'plumbing/coatesville-pa/water-softener',
+      'city_slug'     => 'coatesville-pa',
+      'service_slug'  => 'water-softener',
+      'title'         => 'Water Softener',
+      'intro'         => 'Hard water can cause numerous problems in your household, from scale buildup in pipes to dry skin and dull laundry. Van Fleet Services LLC brings expertise and client satisfaction to water softener service in Coatesville, PA.',
+      'bullets'       => [],
+      'body_sections' => [
+        [ 'heading' => 'How Water Softeners Work', 'paragraphs' => [
+          'Our systems use an ion exchange process with resin beads and regeneration cycles to remove calcium and magnesium ions from your water supply.',
+        ] ],
+        [ 'heading' => 'Benefits and Services', 'paragraphs' => [
+          'Soft water extends the lifespan of your plumbing system, improves skin and hair condition, brightens laundry, and leaves dishes spot-free. We provide consultation, professional installation, regular maintenance, and 24/7 emergency support, backed by a 100% satisfaction guarantee.',
+        ] ],
+      ],
+      'faqs'          => [],
+      'note'          => 'PA 156506 & MP-23-14. Providing plumbing services throughout Chester Springs, Downingtown, Exton, West Chester, Malvern, and surrounding Chester County communities. Copyright © 2026 Van Fleet Services. All rights reserved.',
+    ],
+
+    'plumbing/coatesville-pa/well-pumps' => [
+      'slug'          => 'plumbing/coatesville-pa/well-pumps',
+      'city_slug'     => 'coatesville-pa',
+      'service_slug'  => 'well-pumps',
+      'title'         => 'Well Pumps',
+      'intro'         => 'A well pump system is essential for homes relying on well water, ensuring consistent access to clean, potable water. Van Fleet Services LLC specializes in well pump solutions tailored to the Coatesville community.',
+      'bullets'       => [],
+      'body_sections' => [
+        [ 'heading' => 'High-Quality Well Pumps for Every Home', 'paragraphs' => [
+          'Whether you need a new well pump installation, repairs, or maintenance, our team covers submersible, jet, and constant pressure well pump options tailored to your specific water needs and usage patterns.',
+        ] ],
+        [ 'heading' => 'Professional Service You Can Rely On', 'paragraphs' => [
+          'Our experienced technicians offer installation, repairs, maintenance, emergency services, and water testing and treatment solutions to ensure safe well water for your household.',
+        ] ],
+      ],
+      'faqs'          => [],
+      'note'          => 'PA 156506 & MP-23-14. Providing plumbing services throughout Chester Springs, Downingtown, Exton, West Chester, Malvern, and surrounding Chester County communities. Copyright © 2026 Van Fleet Services. All rights reserved.',
+    ],
+
+    'plumbing/coatesville-pa/water-heater-installation' => [
+      'slug'          => 'plumbing/coatesville-pa/water-heater-installation',
+      'city_slug'     => 'coatesville-pa',
+      'service_slug'  => 'water-heater-installation',
+      'title'         => 'Water Heater Installation',
+      'intro'         => 'Proper installation is vital to ensuring your water heater efficiency, longevity, and safety. Van Fleet Services LLC offers tailored installation services in Coatesville, PA with experienced technicians who prioritize precision and attention to detail.',
+      'bullets'       => [],
+      'body_sections' => [
+        [ 'heading' => 'Water Heater Systems We Install', 'paragraphs' => [
+          'We install tankless models that provide hot water on demand while reducing energy costs, traditional tank systems for households needing high-volume hot water storage in gas and electric options, and solar water heaters designed to lower energy expenses.',
+        ] ],
+        [ 'heading' => 'Our Installation Process', 'paragraphs' => [
+          'Installation follows six steps: an initial consultation assessing your needs, site preparation, precise installation following manufacturer specs and building codes, rigorous system testing, responsible cleanup and disposal, and customer education on features and maintenance.',
+        ] ],
+      ],
+      'faqs'          => [],
+      'note'          => 'PA 156506 & MP-23-14. Providing plumbing services throughout Chester Springs, Downingtown, Exton, West Chester, Malvern, and surrounding Chester County communities. Copyright © 2026 Van Fleet Services. All rights reserved.',
+    ],
+
+    'plumbing/coatesville-pa/sump-pumps' => [
+      'slug'          => 'plumbing/coatesville-pa/sump-pumps',
+      'city_slug'     => 'coatesville-pa',
+      'service_slug'  => 'sump-pumps',
+      'title'         => 'Sump Pumps',
+      'intro'         => 'Ensuring your home stays dry and safe is a top priority, especially in areas prone to heavy rainfall and flooding. A sump pump system is essential to flood protection in Coatesville, PA.',
+      'bullets'       => [],
+      'body_sections' => [
+        [ 'heading' => 'Selecting the Right Sump Pump', 'paragraphs' => [
+          'Choosing the right sump pump comes down to pump type (submersible versus pedestal), horsepower rating, battery backup capability, pump capacity, and switch type. We guide customers through selection to keep their home dry and protected.',
+        ] ],
+        [ 'heading' => 'Complete Sump Pump Services', 'paragraphs' => [
+          'We offer professional installation, regular maintenance, 24/7 emergency repairs, and upgrades or replacements for outdated systems, backed by licensed, insured, and experienced technicians.',
+        ] ],
+      ],
+      'faqs'          => [],
+      'note'          => 'PA 156506 & MP-23-14. Providing plumbing services throughout Chester Springs, Downingtown, Exton, West Chester, Malvern, and surrounding Chester County communities. Copyright © 2026 Van Fleet Services. All rights reserved.',
+    ],
+
+    'plumbing/west-chester-pa/water-softener' => [
+      'slug'          => 'plumbing/west-chester-pa/water-softener',
+      'city_slug'     => 'west-chester-pa',
+      'service_slug'  => 'water-softener',
+      'title'         => 'Water Softener',
+      'intro'         => 'A water softener is a filtration system that removes minerals such as calcium and magnesium from hard water, replacing them with sodium or potassium ions. Van Fleet Services LLC specializes in tailored systems for West Chester, PA homes.',
+      'bullets'       => [],
+      'body_sections' => [
+        [ 'heading' => 'How a Water Softener Helps', 'paragraphs' => [
+          'Soft water prevents scale buildup that damages pipes and systems, enhances appliance efficiency, improves water heater performance and energy costs, softens skin and hair, and helps soaps and detergents lather better and rinse cleaner.',
+        ] ],
+        [ 'heading' => 'Our Services', 'paragraphs' => [
+          'We assess your water usage and hardness, size the right system for your space, and provide installation, maintenance, and repairs backed by 24/7 emergency service, experienced technicians, and warranty coverage.',
+        ] ],
+      ],
+      'faqs'          => [],
+      'note'          => 'PA 156506 & MP-23-14. Providing plumbing services throughout Chester Springs, Downingtown, Exton, West Chester, Malvern, and surrounding Chester County communities. Copyright © 2026 Van Fleet Services. All rights reserved.',
+    ],
+
+    'plumbing/west-chester-pa/well-pumps' => [
+      'slug'          => 'plumbing/west-chester-pa/well-pumps',
+      'city_slug'     => 'west-chester-pa',
+      'service_slug'  => 'well-pumps',
+      'title'         => 'Well Pumps',
+      'intro'         => 'Well pumps are indispensable in many households and businesses, ensuring that well water is efficiently brought to the surface for a steady and dependable water supply in West Chester, PA.',
+      'bullets'       => [],
+      'body_sections' => [
+        [ 'heading' => 'Maximize Your Well Potential', 'paragraphs' => [
+          'We offer comprehensive solutions including installation, maintenance, inspections, repairs, and expert consultation, with skilled technicians assessing your water usage and property size to determine the best type and size of well pump for your needs.',
+        ] ],
+        [ 'heading' => 'Advanced Technology, Real Savings', 'paragraphs' => [
+          'We provide high-efficiency systems that deliver superior performance while minimizing energy consumption, including smart pump technology with remote monitoring and automated controls, plus eco-friendly options that can reduce water bills and add long-term value to your property.',
+        ] ],
+      ],
+      'faqs'          => [],
+      'note'          => 'PA 156506 & MP-23-14. Providing plumbing services throughout Chester Springs, Downingtown, Exton, West Chester, Malvern, and surrounding Chester County communities. Copyright © 2026 Van Fleet Services. All rights reserved.',
+    ],
+
+    'plumbing/west-chester-pa/water-heater-installation' => [
+      'slug'          => 'plumbing/west-chester-pa/water-heater-installation',
+      'city_slug'     => 'west-chester-pa',
+      'service_slug'  => 'water-heater-installation',
+      'title'         => 'Water Heater Installation',
+      'intro'         => 'Installing a new water heater is a significant home improvement project that requires precision, expertise, and attention to detail. Van Fleet Services LLC ensures your new water heater operates efficiently and safely for years in West Chester, PA.',
+      'bullets'       => [],
+      'body_sections' => [
+        [ 'heading' => 'Standards You Can Trust', 'paragraphs' => [
+          'Our installations meet the highest standards through professional training, certified technicians, state-of-the-art equipment, comprehensive evaluation of your home systems, and rigorous quality assurance checks.',
+        ] ],
+        [ 'heading' => 'Safety First', 'paragraphs' => [
+          'We perform detailed safety inspections, ensure proper ventilation for gas systems to prevent carbon monoxide buildup, use high-quality materials to prevent leaks, set appropriate temperature regulation, and install emergency shutoff valves while educating homeowners on their use.',
+        ] ],
+      ],
+      'faqs'          => [],
+      'note'          => 'PA 156506 & MP-23-14. Providing plumbing services throughout Chester Springs, Downingtown, Exton, West Chester, Malvern, and surrounding Chester County communities. Copyright © 2026 Van Fleet Services. All rights reserved.',
+    ],
+
   ],
 ];

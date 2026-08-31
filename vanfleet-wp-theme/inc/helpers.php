@@ -45,6 +45,20 @@ function vanfleet_generic_electrical_services(): array {
 }
 
 /**
+ * Site-wide (non-location-specific) Plumbing service pages — the /plumbing/{city}-pa/
+ * hub and combo page sidebars, mirroring vanfleet_generic_electrical_services() above.
+ */
+function vanfleet_generic_plumbing_services(): array {
+  return [
+    [ 'label' => 'Plumber',                'url' => home_url( '/plumbing/plumber/' ) ],
+    [ 'label' => 'Sump Pumps',             'url' => home_url( '/plumbing/sump-pumps/' ) ],
+    [ 'label' => 'Tankless Water Heaters', 'url' => home_url( '/plumbing/tankless-water-heaters/' ) ],
+    [ 'label' => 'Water Softener',         'url' => home_url( '/plumbing/water-softener/' ) ],
+    [ 'label' => 'Well Pumps',             'url' => home_url( '/plumbing/well-pumps/' ) ],
+  ];
+}
+
+/**
  * Service-specific FAQs for an /electrical/{city}-pa/[{service}/] page,
  * with {city} interpolated in. $key is a location-service 'service_slug'
  * (e.g. 'ev-charger-installation') or 'hub' for the bare city page. Used as
