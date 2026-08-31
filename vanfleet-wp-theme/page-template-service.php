@@ -34,6 +34,24 @@ $fr = function ( string $key ) use ( $id ) {
 /* ── Current service data (slug-based fallback) ─────────────── */
 $cur_service = vanfleet_current_service();
 
+/* ── Related services (siblings or top-level hubs) ──────────── */
+$related_parent_slug = $cur_service['parent'] ?? '';
+$related = [];
+foreach ( vanfleet_services() as $s ) {
+	if ( $cur_service && $s['slug'] === $cur_service['slug'] ) continue;
+	if ( $related_parent_slug && ( $s['parent'] ?? '' ) === $related_parent_slug ) {
+		$related[] = $s;
+	}
+}
+if ( empty( $related ) ) {
+	foreach ( vanfleet_services( 'hub' ) as $s ) {
+		if ( $s['slug'] !== ( $related_parent_slug ?: ( $cur_service['slug'] ?? '' ) ) ) {
+			$related[] = $s;
+		}
+	}
+}
+$related = array_slice( $related, 0, 6 );
+
 /* ── Scalar fields ──────────────────────────────────────────── */
 $service_category  = $f( 'service_category',  $cur_service['category'] ?? 'Plumbing Service' );
 $hero_heading      = $f( 'service_hero_heading', $title );
@@ -303,39 +321,18 @@ $home_url    = esc_url( home_url( '/' ) );
           </a>
         </div>
 
-        <?php
-        global $wpdb;
-        $svc_ids = array_diff(
-          array_map( 'intval', (array) $wpdb->get_col(
-            "SELECT DISTINCT post_id FROM {$wpdb->postmeta}
-             WHERE meta_key = '_wp_page_template'
-               AND meta_value LIKE '%template-service%'
-               AND meta_value NOT LIKE '%hub%'"
-          ) ),
-          [ (int) get_the_ID() ]
-        );
-        $related_services_q = empty( $svc_ids ) ? null : new WP_Query( [
-          'post_type'      => 'page',
-          'post_status'    => 'publish',
-          'post__in'       => $svc_ids,
-          'posts_per_page' => -1,
-          'orderby'        => 'menu_order',
-          'order'          => 'ASC',
-        ] );
-        ?>
-
-        <?php if ( $related_services_q && $related_services_q->have_posts() ) : ?>
+        <?php if ( ! empty( $related ) ) : ?>
         <div class="vf-internal-links">
           <h3><?php echo esc_html( $sidebar_link_heading ); ?></h3>
           <ul>
-            <?php while ( $related_services_q->have_posts() ) : $related_services_q->the_post(); ?>
+            <?php foreach ( $related as $r ) : ?>
             <li>
-              <a href="<?php the_permalink(); ?>">
+              <a href="<?php echo esc_url( vanfleet_service_url( $r ) ); ?>">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                <?php echo vf_clean_page_title( get_the_title() ); ?>
+                <?php echo esc_html( $r['title'] ); ?>
               </a>
             </li>
-            <?php endwhile; wp_reset_postdata(); ?>
+            <?php endforeach; ?>
           </ul>
         </div>
         <?php endif; ?>

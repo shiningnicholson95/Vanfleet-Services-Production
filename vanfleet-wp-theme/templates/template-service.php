@@ -126,38 +126,18 @@ $eyebrow = ! empty( $service['parent'] )
         </a>
       </div>
 
-      <?php
-      global $wpdb;
-      $svc_ids = array_diff(
-        array_map( 'intval', (array) $wpdb->get_col(
-          "SELECT DISTINCT post_id FROM {$wpdb->postmeta}
-           WHERE meta_key = '_wp_page_template'
-             AND meta_value LIKE '%template-service%'
-             AND meta_value NOT LIKE '%hub%'"
-        ) ),
-        [ (int) get_the_ID() ]
-      );
-      $related_services_q = empty( $svc_ids ) ? null : new WP_Query( [
-        'post_type'      => 'page',
-        'post_status'    => 'publish',
-        'post__in'       => $svc_ids,
-        'posts_per_page' => -1,
-        'orderby'        => 'menu_order',
-        'order'          => 'ASC',
-      ] );
-      ?>
-      <?php if ( $related_services_q && $related_services_q->have_posts() ) : ?>
+      <?php if ( ! empty( $related ) ) : ?>
         <div class="vf-internal-links">
           <h3>Related Services</h3>
           <ul>
-            <?php while ( $related_services_q->have_posts() ) : $related_services_q->the_post(); ?>
+            <?php foreach ( $related as $r ) : ?>
               <li>
-                <a href="<?php the_permalink(); ?>">
+                <a href="<?php echo esc_url( vanfleet_service_url( $r ) ); ?>">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                  <?php echo vf_clean_page_title( get_the_title() ); ?>
+                  <?php echo esc_html( $r['title'] ); ?>
                 </a>
               </li>
-            <?php endwhile; wp_reset_postdata(); ?>
+            <?php endforeach; ?>
           </ul>
         </div>
       <?php endif; ?>
