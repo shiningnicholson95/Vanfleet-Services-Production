@@ -48,7 +48,7 @@ $service_areas = array_values( array_filter(
   fn( $l ) => strcasecmp( $l['city'], $city_name ) !== 0
 ) );
 
-$faqs = ! empty( $city['faqs'] ) ? $city['faqs'] : vanfleet_location_service_faqs( 'hub', $city_name );
+$faqs = ! empty( $city['faqs'] ) ? $city['faqs'] : vanfleet_location_service_faqs( 'plumbing-hub', $city_name );
 ?>
 <main id="primary">
 

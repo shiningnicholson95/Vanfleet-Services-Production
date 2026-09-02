@@ -1,8 +1,10 @@
 <?php
 /**
- * Service-specific FAQ sets for the /electrical/{city}-pa/[{service}/] pages.
+ * Service-specific FAQ sets for the /electrical/{city}-pa/[{service}/] and
+ * /plumbing/{city}-pa/[{service}/] pages.
  * Keyed by service_slug (matches inc/data-location-services.php 'pages'
- * entries), plus a 'hub' set for the bare /electrical/{city}-pa/ city pages.
+ * entries), plus a 'hub' set for the bare /electrical/{city}-pa/ city pages
+ * and a 'plumbing-hub' set for the bare /plumbing/{city}-pa/ city pages.
  * {city} is replaced with the current city name at render time — see
  * vanfleet_location_service_faqs() in inc/helpers.php.
  */
@@ -62,6 +64,70 @@ return [
     ['question' => 'Are your electricians licensed and insured?', 'answer' => 'Yes. Every electrician on our team is licensed, insured, and background-checked before ever stepping into your home.'],
     ['question' => 'Can an electrician diagnose the cause of tripping breakers?', 'answer' => "Yes — we trace the circuit, identify whether it's an overload, a short, or a failing breaker, and fix the root cause, not just reset it."],
     ['question' => 'Do you offer 24/7 emergency electrician service?', 'answer' => 'Yes — for issues like power loss, sparking outlets, or exposed wiring, we dispatch an electrician to {city} any time, day or night.'],
+  ],
+
+  'plumbing-hub' => [
+    ['question' => 'What plumbing services do you offer in {city}?', 'answer' => 'We handle drain cleaning, leak detection and pipe repair, water heater installation and repair, well and sump pump service, water softeners, and general plumbing repairs for homeowners throughout {city} and the surrounding area.'],
+    ['question' => 'Are you licensed for plumbing work in Pennsylvania?', 'answer' => 'Yes. Van Fleet Services is a licensed and insured plumbing contractor in Pennsylvania (PA HIC #PA156506, MP-23-14), and every job in {city} is completed to code.'],
+    ['question' => 'Do you offer 24/7 emergency plumbing service in {city}?', 'answer' => 'Yes — plumbing emergencies like burst pipes, major leaks, or sewage backups get priority dispatch any time, day or night.'],
+    ['question' => 'Can you provide same-day plumbing service in {city}?', 'answer' => 'Often, yes. For common repairs and diagnostics we offer same-day appointments in {city} whenever our schedule allows.'],
+    ['question' => 'Do you offer financing for plumbing work in {city}?', 'answer' => 'Yes — we offer flexible financing through Wisetack for larger jobs like water heater replacements and re-piping.'],
+  ],
+
+  'water-softener' => [
+    ['question' => 'How do I know if I need a water softener?', 'answer' => 'Signs of hard water include scale buildup around faucets and fixtures, spotty dishes, dull laundry, and dry skin or hair after showering — common issues across {city} due to local water hardness.'],
+    ['question' => 'How does a water softener work?', 'answer' => 'Most systems use an ion exchange process, passing hard water through resin beads that capture calcium and magnesium and replace them with sodium or potassium ions.'],
+    ['question' => 'How often does a water softener need maintenance?', 'answer' => 'We recommend an annual check of the resin bed and a refill of the brine tank as needed, which keeps the system softening water effectively year-round.'],
+    ['question' => 'Will a water softener increase my water bill?', 'answer' => "Any increase is minor — a properly sized system uses water efficiently, and the savings on appliance lifespan and detergent use typically offset it."],
+    ['question' => 'How long does water softener installation take?', 'answer' => 'Most installations in {city} homes take 2–4 hours, including connecting the system to your main water line and testing it.'],
+  ],
+
+  'well-pumps' => [
+    ['question' => 'What type of well pump do I need?', 'answer' => 'It depends on your well depth — submersible pumps suit deep wells, jet pumps work well for shallow wells around 25 feet or less, and constant pressure pumps maintain steady water pressure regardless of demand.'],
+    ['question' => 'How do I know my well pump needs repair or replacement?', 'answer' => 'Watch for inconsistent water pressure, a pump that cycles on and off frequently, unusual noises, or a noticeable drop in water flow — all signs it\'s time for a technician to take a look.'],
+    ['question' => 'Do you offer emergency well pump repair?', 'answer' => 'Yes — a failed well pump means no water at all, so we prioritize emergency dispatch to {city} homes any time, day or night.'],
+    ['question' => 'How long does well pump installation take?', 'answer' => 'Most installations take a few hours for a straightforward replacement, though depth and access can extend the job for new installations.'],
+    ['question' => 'Do you test well water quality?', 'answer' => 'Yes — as part of our well pump service we can test your water and recommend treatment if quality issues come up.'],
+  ],
+
+  'sump-pumps' => [
+    ['question' => "Do I need a sump pump if I've never had flooding?", 'answer' => "If your basement or crawl space sits below grade, a sump pump is cheap insurance against heavy rain or snowmelt — the kind of water event that only has to happen once to cause serious damage."],
+    ['question' => 'What\'s included in sump pump maintenance?', 'answer' => 'We inspect and test the pump\'s operation, the discharge line, the check valve, and the backup battery system so it\'s ready to run when you actually need it.'],
+    ['question' => 'Do you install battery backup sump pumps?', 'answer' => 'Yes — a battery backup keeps your sump pump running during a power outage, which is exactly when basement flooding risk is highest.'],
+    ['question' => 'How quickly can you respond to a sump pump emergency?', 'answer' => 'Sump pump failures are most urgent during heavy rain, so we prioritize 24/7 emergency dispatch to {city} homes for exactly this reason.'],
+    ['question' => 'How long does sump pump installation take?', 'answer' => 'Most installations take a few hours, including sizing the pump to your home and installing the discharge line to code.'],
+  ],
+
+  'water-heaters' => [
+    ['question' => 'How do I know if my water heater needs repair or replacement?', 'answer' => 'Inconsistent hot water, rust-colored water, unusual noises, or a unit over 10–12 years old are all signs to have it inspected before it fails completely.'],
+    ['question' => 'What size water heater do I need?', 'answer' => "We size the unit to your household's hot water demand, fuel type, and available installation space during the estimate."],
+    ['question' => 'Do you repair both gas and electric water heaters?', 'answer' => 'Yes — our technicians service and repair gas, electric, and tankless water heaters from all major brands.'],
+    ['question' => 'Do you offer emergency water heater repair?', 'answer' => 'Yes — a water heater that fails completely is a same-day priority for us, with 24/7 dispatch available across {city}.'],
+    ['question' => 'How long does a water heater replacement take?', 'answer' => 'Most replacements are completed in a single visit, typically 2–4 hours depending on the unit type and any code updates needed.'],
+  ],
+
+  'tankless-water-heaters' => [
+    ['question' => 'How is a tankless water heater different from a traditional tank?', 'answer' => 'A tankless unit heats water on demand instead of storing and reheating it, which means it never runs out of hot water and typically uses less energy over time.'],
+    ['question' => 'Do I need to upgrade my gas line or electrical panel for a tankless unit?', 'answer' => 'Sometimes — tankless units can require more gas flow or electrical capacity than a standard outlet or line provides, so we check this during the estimate.'],
+    ['question' => 'How long does tankless water heater installation take?', 'answer' => 'Most installations in {city} take about half a day, including mounting the unit and connecting gas or electric, water, and venting.'],
+    ['question' => 'Do tankless water heaters require maintenance?', 'answer' => 'Yes — we recommend an annual flush to clear mineral buildup from the heat exchanger, which keeps the unit running efficiently.'],
+    ['question' => 'Are tankless water heaters worth the higher upfront cost?', 'answer' => 'For most households, yes — the energy savings, longer lifespan, and endless hot water typically offset the higher installation cost over time.'],
+  ],
+
+  'plumber' => [
+    ['question' => 'What plumbing problems can you fix?', 'answer' => 'From leaky faucets and clogged drains to burst pipes, water heater issues, and sewage backups — our licensed plumbers handle the full range of residential plumbing in {city}.'],
+    ['question' => 'Do you offer 24/7 emergency plumber service?', 'answer' => 'Yes — for burst pipes, major leaks, or no hot water, we dispatch a plumber to {city} any time, day or night.'],
+    ['question' => 'Do you offer financing for plumbing repairs?', 'answer' => 'Yes — we offer flexible financing through Wisetack for larger repairs and replacements.'],
+    ['question' => 'Can you handle both repairs and full re-piping?', 'answer' => 'Yes — from a single fixture repair to re-piping an older home, our team handles jobs of any size.'],
+    ['question' => 'How quickly can a plumber get to my home?', 'answer' => 'For common repairs we often offer same-day appointments in {city}, and true emergencies get priority dispatch.'],
+  ],
+
+  'water-heater-installation' => [
+    ['question' => 'What types of water heaters do you install?', 'answer' => 'We install traditional tank units in gas and electric, tankless on-demand systems, and solar water heaters, based on your household\'s hot water needs.'],
+    ['question' => 'How long does water heater installation take?', 'answer' => 'Most installations in {city} are completed in a single visit, typically 2–4 hours from removal of the old unit to final testing.'],
+    ['question' => 'Do you remove and dispose of my old water heater?', 'answer' => 'Yes — removal and responsible disposal of your old unit is included as part of the installation.'],
+    ['question' => 'Do you handle the permit for water heater installation?', 'answer' => 'Yes — where a permit is required, we handle the application and inspection scheduling as part of the job.'],
+    ['question' => 'Will you test the system after installation?', 'answer' => 'Yes — every installation ends with a full test for leaks, proper venting, and safe operation before we consider the job done.'],
   ],
 
 ];
