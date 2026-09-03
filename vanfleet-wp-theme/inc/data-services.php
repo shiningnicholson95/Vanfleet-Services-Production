@@ -1314,4 +1314,25 @@ return [
     'faqs'            => [],
   ],
 
+  [
+    'title'           => 'Plumber',
+    'slug'            => 'plumber-phoenixville-pa',
+    'image'           => '2026/06/home-vanfleet-services-llc.jpeg',
+    'image_alt'       => 'Plumber — Van Fleet Services',
+    'type'            => 'service',
+    'parent'          => null,
+    'primary_keyword' => 'plumber Phoenixville PA',
+    'description'     => 'When plumbing problems disrupt your routine, Van Fleet Services LLC delivers prompt, reliable plumbing service to Phoenixville homeowners — backed by transparent, upfront pricing and licensed workmanship across Chester County.',
+    'cta'             => 'Schedule a Plumber',
+    'features'        => [
+      'Emergency plumbing — burst pipes, severe leaks, and major clogs',
+      'Leak detection and repair — faucets to concealed pipes',
+      'Drain cleaning for sinks, toilets, showers, and sewer lines',
+      'Water heater repair, replacement, and tankless installation',
+      'Sump pump, well pump, and water softener service',
+      '24/7 emergency plumbing availability',
+    ],
+    'faqs'            => [],
+  ],
+
 ];
