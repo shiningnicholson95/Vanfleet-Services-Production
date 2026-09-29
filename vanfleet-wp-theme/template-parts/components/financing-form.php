@@ -30,6 +30,11 @@
   </div>
 
   <div class="vf-form-field">
+    <label for="ff-address">Service address <span class="vf-field__req" aria-hidden="true">*</span></label>
+    <input id="ff-address" type="text" name="service_address" placeholder="123 Main St, West Chester, PA" required autocomplete="street-address">
+  </div>
+
+  <div class="vf-form-field">
     <label for="ff-project">Project type</label>
     <select id="ff-project" name="project_type">
       <option>Water Heater Replacement</option>

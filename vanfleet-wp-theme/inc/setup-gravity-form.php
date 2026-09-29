@@ -42,6 +42,16 @@ add_action( 'init', function () {
 				'cssClass'    => '',
 			],
 			[
+				'id'          => 5,
+				'label'       => 'Service address',
+				'type'        => 'text',
+				'isRequired'  => true,
+				'placeholder' => '123 Main St, West Chester, PA',
+				'size'        => 'large',
+				'cssClass'    => '',
+				'inputName'   => 'service_address',
+			],
+			[
 				'id'         => 3,
 				'label'      => 'Service needed',
 				'type'       => 'select',
@@ -115,6 +125,7 @@ add_action( 'init', function () {
 			[ 'id' => 2, 'label' => 'Phone',       'type' => 'phone',    'isRequired' => true, 'placeholder' => '(610) 555-0142',   'phoneFormat' => 'standard', 'size' => 'large', 'cssClass' => '' ],
 			[ 'id' => 3, 'label' => 'Email',       'type' => 'email',    'isRequired' => true, 'placeholder' => 'you@email.com',    'size' => 'large', 'cssClass' => '' ],
 			[ 'id' => 4, 'label' => 'Town / City', 'type' => 'text',     'isRequired' => true, 'placeholder' => 'West Chester',     'size' => 'large', 'cssClass' => '' ],
+			[ 'id' => 10, 'label' => 'Service address', 'type' => 'text', 'isRequired' => true, 'placeholder' => '123 Main St, West Chester, PA', 'size' => 'large', 'cssClass' => '', 'inputName' => 'service_address' ],
 			[
 				'id' => 5, 'label' => 'Project type', 'type' => 'select', 'isRequired' => false, 'size' => 'large', 'cssClass' => '',
 				'choices' => [
@@ -279,7 +290,7 @@ add_action( 'init', function () {
 			[ 'id' => 2, 'label' => 'Phone',           'type' => 'phone', 'isRequired' => true,  'placeholder' => '(610) 555-0142',                'phoneFormat' => 'standard', 'size' => 'large', 'cssClass' => '' ],
 			[ 'id' => 3, 'label' => 'Email',           'type' => 'email', 'isRequired' => false, 'placeholder' => 'you@email.com',                 'size' => 'large', 'cssClass' => '' ],
 			[ 'id' => 4, 'label' => 'Town / City',     'type' => 'text',  'isRequired' => false, 'placeholder' => 'West Chester',                  'size' => 'large', 'cssClass' => '' ],
-			[ 'id' => 5, 'label' => 'Service address', 'type' => 'text',  'isRequired' => false, 'placeholder' => '123 Main St, West Chester, PA', 'size' => 'large', 'cssClass' => '' ],
+			[ 'id' => 5, 'label' => 'Service address', 'type' => 'text',  'isRequired' => true, 'placeholder' => '123 Main St, West Chester, PA', 'size' => 'large', 'cssClass' => '', 'inputName' => 'service_address' ],
 			[
 				'id' => 6, 'label' => 'Service needed', 'type' => 'select', 'isRequired' => true, 'size' => 'large', 'cssClass' => '',
 				'choices' => [
@@ -362,21 +373,23 @@ function vanfleet_handle_hero_request_service(): void {
 	$full_name    = sanitize_text_field( wp_unslash( $_POST['full_name'] ?? '' ) );
 	$phone        = sanitize_text_field( wp_unslash( $_POST['phone']     ?? '' ) );
 	$email        = sanitize_email( wp_unslash( $_POST['email']         ?? '' ) );
+	$address      = sanitize_text_field( wp_unslash( $_POST['address']  ?? '' ) );
 	$service      = sanitize_text_field( wp_unslash( $_POST['vf_service'] ?? '' ) );
 	$message      = sanitize_textarea_field( wp_unslash( $_POST['message'] ?? '' ) );
 	$source_page  = sanitize_text_field( wp_unslash( $_POST['source_page'] ?? '' ) );
 	$source_page_url = esc_url_raw( wp_unslash( $_POST['source_url'] ?? '' ) );
 
-	if ( empty( $full_name ) || empty( $phone ) || empty( $email ) ) {
-		wp_send_json_error( [ 'message' => 'Please fill in your name, phone number, and email.' ], 422 );
+	if ( empty( $full_name ) || empty( $phone ) || empty( $email ) || empty( $address ) ) {
+		wp_send_json_error( [ 'message' => 'Please fill in your name, phone number, email, and service address.' ], 422 );
 	}
 
-	/* Resolve field IDs dynamically from the form definition. Hidden fields are
-	   disambiguated by inputName ("Parameter name" in the admin UI) since both
-	   share type 'hidden' and simple type-matching can't tell them apart. */
-	$map = [ 'name' => null, 'phone' => null, 'email' => null, 'service' => null, 'message' => null, 'source_page' => null, 'source_url' => null ];
+	/* Resolve field IDs dynamically from the form definition. Hidden fields and the
+	   address field are disambiguated by inputName ("Parameter name" in the admin UI)
+	   since simple type-matching can't tell them apart from other same-type fields. */
+	$map = [ 'name' => null, 'phone' => null, 'email' => null, 'address' => null, 'service' => null, 'message' => null, 'source_page' => null, 'source_url' => null ];
 	foreach ( $form['fields'] as $field ) {
-		if ( $field->type === 'text'     && $map['name']    === null ) $map['name']    = $field->id;
+		if ( $field->type === 'text'     && ( $field->inputName ?? '' ) === 'service_address' && $map['address'] === null ) $map['address'] = $field->id;
+		elseif ( $field->type === 'text'     && $map['name']    === null ) $map['name']    = $field->id;
 		elseif ( $field->type === 'phone'    && $map['phone']   === null ) $map['phone']   = $field->id;
 		elseif ( $field->type === 'email'    && $map['email']   === null ) $map['email']   = $field->id;
 		elseif ( $field->type === 'select'   && $map['service'] === null ) $map['service'] = $field->id;
@@ -399,6 +412,7 @@ function vanfleet_handle_hero_request_service(): void {
 	if ( $map['name']    !== null ) $entry[ (string) $map['name'] ]    = $full_name;
 	if ( $map['phone']   !== null ) $entry[ (string) $map['phone'] ]   = $phone;
 	if ( $map['email']   !== null ) $entry[ (string) $map['email'] ]   = $email;
+	if ( $map['address'] !== null ) $entry[ (string) $map['address'] ] = $address;
 	if ( $map['service'] !== null ) $entry[ (string) $map['service'] ] = $service;
 	if ( $map['message'] !== null ) $entry[ (string) $map['message'] ] = $message;
 	if ( $map['source_page'] !== null ) $entry[ (string) $map['source_page'] ] = $source_page;
@@ -449,6 +463,7 @@ function vanfleet_handle_financing_request(): void {
 	$phone     = sanitize_text_field( wp_unslash( $_POST['phone']     ?? '' ) );
 	$email     = sanitize_email( wp_unslash( $_POST['email']         ?? '' ) );
 	$city      = sanitize_text_field( wp_unslash( $_POST['city']     ?? '' ) );
+	$address   = sanitize_text_field( wp_unslash( $_POST['service_address'] ?? '' ) );
 	$project   = sanitize_text_field( wp_unslash( $_POST['project_type']     ?? '' ) );
 	$amount    = sanitize_text_field( wp_unslash( $_POST['estimated_amount'] ?? '' ) );
 	$message   = sanitize_textarea_field( wp_unslash( $_POST['message'] ?? '' ) );
@@ -456,7 +471,7 @@ function vanfleet_handle_financing_request(): void {
 	$source_page      = sanitize_text_field( wp_unslash( $_POST['source_page'] ?? '' ) );
 	$source_page_url  = esc_url_raw( wp_unslash( $_POST['source_url'] ?? '' ) );
 
-	if ( empty( $full_name ) || empty( $phone ) || empty( $email ) || ! is_email( $email ) || empty( $city ) || ! $consent ) {
+	if ( empty( $full_name ) || empty( $phone ) || empty( $email ) || ! is_email( $email ) || empty( $city ) || empty( $address ) || ! $consent ) {
 		wp_send_json_error( [ 'message' => 'Please fill in all required fields and confirm consent.' ], 422 );
 	}
 
@@ -478,6 +493,7 @@ function vanfleet_handle_financing_request(): void {
 		'7'            => $message,
 		'8'            => $source_page,
 		'9'            => $source_page_url,
+		'10'           => $address,
 	];
 
 	$entry_id = GFAPI::add_entry( $entry );
@@ -533,8 +549,8 @@ function vanfleet_handle_schedule_service_request(): void {
 	$source_page      = sanitize_text_field( wp_unslash( $_POST['source_page'] ?? '' ) );
 	$source_page_url  = esc_url_raw( wp_unslash( $_POST['source_url'] ?? '' ) );
 
-	if ( empty( $full_name ) || empty( $phone ) || empty( $service ) ) {
-		wp_send_json_error( [ 'message' => 'Please fill in your name, phone, and the service needed.' ], 422 );
+	if ( empty( $full_name ) || empty( $phone ) || empty( $address ) || empty( $service ) ) {
+		wp_send_json_error( [ 'message' => 'Please fill in your name, phone, service address, and the service needed.' ], 422 );
 	}
 
 	$entry = [

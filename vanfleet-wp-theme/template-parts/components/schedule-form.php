@@ -49,8 +49,8 @@
   </div>
 
   <div class="vf-form-field">
-    <label for="sf-address">Service address</label>
-    <input id="sf-address" type="text" name="service_address" placeholder="123 Main St, West Chester, PA" autocomplete="street-address">
+    <label for="sf-address">Service address <span class="vf-field__req" aria-hidden="true">*</span></label>
+    <input id="sf-address" type="text" name="service_address" placeholder="123 Main St, West Chester, PA" required autocomplete="street-address">
   </div>
 
   <div class="vf-form-row">

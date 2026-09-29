@@ -24,6 +24,10 @@ $form_sub   = $args['sub']   ?? "Tell us what you need — we'll call you right 
         <input type="email" name="email" placeholder="you@email.com" required autocomplete="email">
       </label>
       <label class="vf-field">
+        <span>Service address <span class="vf-field__req" aria-hidden="true">*</span></span>
+        <input type="text" name="address" placeholder="123 Main St, West Chester, PA" required autocomplete="street-address">
+      </label>
+      <label class="vf-field">
         <span>Service needed</span>
         <select name="vf_service">
           <option value="Plumbing Repair">Plumbing Repair</option>

@@ -92,12 +92,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const btn    = heroForm.querySelector('.vf-hero-form__submit');
       const status = heroForm.querySelector('.vf-hero-form__status');
-      const name   = (heroForm.querySelector('[name="full_name"]').value || '').trim();
-      const phone  = (heroForm.querySelector('[name="phone"]').value || '').trim();
-      const email  = (heroForm.querySelector('[name="email"]').value || '').trim();
+      const name    = (heroForm.querySelector('[name="full_name"]').value || '').trim();
+      const phone   = (heroForm.querySelector('[name="phone"]').value || '').trim();
+      const email   = (heroForm.querySelector('[name="email"]').value || '').trim();
+      const address = (heroForm.querySelector('[name="address"]').value || '').trim();
 
-      if (!name || !phone || !email) {
-        status.textContent = 'Please enter your name, phone number, and email.';
+      if (!name || !phone || !email || !address) {
+        status.textContent = 'Please enter your name, phone number, email, and service address.';
         status.className = 'vf-hero-form__status vf-hero-form__status--error';
         status.removeAttribute('hidden');
         return;
@@ -150,9 +151,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const phone   = (financingForm.querySelector('[name="phone"]').value || '').trim();
       const email   = (financingForm.querySelector('[name="email"]').value || '').trim();
       const city    = (financingForm.querySelector('[name="city"]').value || '').trim();
+      const address = (financingForm.querySelector('[name="service_address"]').value || '').trim();
       const consent = financingForm.querySelector('[name="consent"]').checked;
 
-      if (!name || !phone || !email || !city || !consent) {
+      if (!name || !phone || !email || !city || !address || !consent) {
         status.textContent = 'Please fill in all required fields and confirm consent.';
         status.className = 'vf-hero-form__status vf-hero-form__status--error';
         status.removeAttribute('hidden');
@@ -204,10 +206,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const status  = scheduleForm.querySelector('.vf-hero-form__status');
       const name    = (scheduleForm.querySelector('[name="full_name"]').value || '').trim();
       const phone   = (scheduleForm.querySelector('[name="phone"]').value || '').trim();
+      const address = (scheduleForm.querySelector('[name="service_address"]').value || '').trim();
       const service = (scheduleForm.querySelector('[name="service_needed"]').value || '').trim();
 
-      if (!name || !phone || !service) {
-        status.textContent = 'Please fill in your name, phone, and the service needed.';
+      if (!name || !phone || !address || !service) {
+        status.textContent = 'Please fill in your name, phone, service address, and the service needed.';
         status.className = 'vf-hero-form__status vf-hero-form__status--error';
         status.removeAttribute('hidden');
         return;
