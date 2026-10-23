@@ -68,7 +68,14 @@ $toc = [
       <p>We welcome your feedback on the accessibility of our website. Please let us know if you encounter accessibility barriers:</p>
       <ul>
         <li>Phone: <a href="<?php echo esc_url( vanfleet_tel_href() ); ?>"><?php echo esc_html( $g['phone_display'] ); ?></a></li>
-        <li>E-mail: <?php echo esc_html( $g['email'] ); ?></li>
+        <li>E-mail: <?php
+          /* Cloudflare's Email Address Obfuscation rewrites ANY email-shaped text node
+             (not just mailto: links) into a /cdn-cgi/l/email-protection link that 404s
+             on this zone - splitting the "@" into an HTML entity keeps the address
+             fully readable but doesn't match Cloudflare's plain-text email pattern. */
+          $vf_email_parts = explode( '@', $g['email'], 2 );
+          echo esc_html( $vf_email_parts[0] ) . '&#64;' . esc_html( $vf_email_parts[1] ?? '' );
+        ?></li>
         <li>Postal address: <?php echo esc_html( $g['address']['street'] . ', ' . $g['address']['city'] . ', ' . $g['address']['state'] . ' ' . $g['address']['zip'] . ', ' . $g['address']['country'] ); ?></li>
       </ul>
       <p>We try to respond to feedback within 2 business days.</p>
