@@ -68,7 +68,7 @@ $toc = [
       <p>We welcome your feedback on the accessibility of our website. Please let us know if you encounter accessibility barriers:</p>
       <ul>
         <li>Phone: <a href="<?php echo esc_url( vanfleet_tel_href() ); ?>"><?php echo esc_html( $g['phone_display'] ); ?></a></li>
-        <li>E-mail: <a href="mailto:<?php echo esc_attr( $g['email'] ); ?>"><?php echo esc_html( $g['email'] ); ?></a></li>
+        <li>E-mail: <?php echo esc_html( $g['email'] ); ?></li>
         <li>Postal address: <?php echo esc_html( $g['address']['street'] . ', ' . $g['address']['city'] . ', ' . $g['address']['state'] . ' ' . $g['address']['zip'] . ', ' . $g['address']['country'] ); ?></li>
       </ul>
       <p>We try to respond to feedback within 2 business days.</p>
